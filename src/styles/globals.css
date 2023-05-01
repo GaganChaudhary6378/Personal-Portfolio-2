@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,10 +14,17 @@
 }
 
 body{
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 @media screen and (max-width: 380px) {
   body {
     overflow-x: hidden;
   }
+}
+.btn{
+  background-image: url("/Frame 1.png");
+  background-size: 700px;
+  background-repeat: no-repeat;
+  height: 600px;
 }
