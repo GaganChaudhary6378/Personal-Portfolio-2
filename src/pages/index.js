@@ -29,11 +29,11 @@ export default function landing() {
         </p>
       </div>
       <div className="btn">
-        <button className="md:mx-12 bg-[#B0F2B2] md:w-[123px] md:h-[42px] font-revalia md:text-[17px] rounded-md h-[50px] w-[150px] text-[21px] mx-[370px] mt-5 md:mt-0">
+        <button className="md:mx-12 bg-[#B0F2B2] md:w-[123px] md:h-[42px] font-revalia md:text-[17px] rounded-md h-[70px] w-[200px] text-[25px] mx-[370px] mt-5 md:mt-0">
           Resume!
         </button>
         <Link href="/projects">
-          <button className="glow-on-hover md:ml-4 font-revalia font-normal md:text-[17px] bg-[#F5F5F5] md:w-[217px] md:h-[42px] mx-[333px] mt-16 w-[250px] h-[60px] md:mt-0">
+          <button className="glow-on-hover md:ml-4 font-revalia font-normal md:text-[17px] bg-[#F5F5F5] md:w-[217px] md:h-[42px] mx-[320px] mt-16 w-[300px] h-[70px] md:mt-0 text-[25px]">
             See my Projects
           </button>
         </Link>
