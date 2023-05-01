@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 export default function landing() {
   return (
-    <div className="mt-[180px]">
+    <div className="mt-[160px]">
       <h3 className="font-bold font-poppins mx-12">
         Welcome to my personal portfolio.
       </h3>
@@ -20,7 +21,8 @@ export default function landing() {
         </p>
       </div>
       <div className="btn">
-        <button className="pt-[60px] mx-12">Hire Me!</button>
+        <button className=" mx-12 bg-[#B0F2B2] w-[123px] h-[42px] font-revalia text-[17px] rounded-md">Resume!</button>
+        <Link href="/projects"><button className="glow-on-hover ml-4 font-revalia font-normal text-[17px] bg-[#F5F5F5] w-[217px] h-[42px]">See my Projects</button></Link>
       </div>
     </div>
   );
