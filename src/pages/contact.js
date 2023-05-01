@@ -14,7 +14,7 @@ export default function about() {
                     <div className="form-group mb-6 font-revalia">
                       <input
                         type="text"
-                        className="form-control block md:w-full w-[600px] h-[90px] md:px-3 px-5 md:h-auto py-1.5 md:text-base text-[1.5rem] font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#245D27] focus:outline-none"
+                        className="form-control block md:w-full w-[600px] h-[90px] md:px-3 px-5 md:pb-0 pb-10 md:h-auto md:py-1.5 md:text-base text-[1.5rem] font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#245D27] focus:outline-none"
                         id="exampleInput7"
                         placeholder="Name"
                       />
@@ -22,14 +22,14 @@ export default function about() {
                     <div className="form-group mb-6 font-revalia">
                       <input
                         type="email"
-                        className="form-control block md:w-full w-[600px] h-[90px] md:px-3 px-5 py-1.5 md:h-auto md:text-base text-[1.5rem] font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#245D27] focus:outline-none"
+                        className="form-control block md:w-full w-[600px] h-[90px] md:px-3 px-5 md:pb-0 pb-10 py-1.5 md:h-auto md:text-base text-[1.5rem] font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#245D27] focus:outline-none"
                         id="exampleInput8"
                         placeholder="Email address"
                       />
                     </div>
                     <div className="form-group mb-6 font-revalia">
                       <textarea
-                        className="form-control block md:w-full w-[600px] md:px-3 px-5 md:py-1.5 py-5 md:h-auto h-[100px] md:text-base text-[1.5rem] font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#245D27] focus:outline-none"
+                        className="form-control block md:w-full w-[600px] md:px-3 px-5 md:py-1.5 py-5 md:pb-0 pb-3 md:h-auto h-[100px] md:text-base text-[1.5rem] font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#245D27] focus:outline-none"
                         id="exampleFormControlTextarea13"
                         rows="3"
                         placeholder="Message"
