@@ -3,7 +3,14 @@ import React from "react";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 // import { useEffect } from "react";
+import { TfiLinkedin} from 'react-icons/tfi';
+import {BsTwitter} from 'react-icons/bs';
+import {BsGithub} from 'react-icons/bs';
+import {AiFillMail} from 'react-icons/ai';
+
+
 export default function about() {
   const router=useRouter();
   const [name, setName] = React.useState("");
@@ -67,6 +74,12 @@ export default function about() {
               <div className="grid lg:grid-cols-2 items-center">
                 <div className="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
                   <div className="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14">
+                    <div className="mb-7 flex flex-row gap-16 ml-[100px] text-3xl"> 
+                    <Link href="https://www.linkedin.com/in/gagan-chaudhary-443174216/"><TfiLinkedin className=" hover:cursor-pointer"/></Link>
+                    <Link href=""><BsTwitter className="hover:cursor-pointer"/></Link>
+                    <Link href="https://github.com/GaganChaudhary6378"><BsGithub className=" hover:cursor-pointer"/></Link>
+                    <Link href=""><AiFillMail className="hover:cursor-pointer"/></Link>
+                    </div>
                     <h2 className="md:text-3xl font-bold mb-12 font-revalia text-[#245D27] text-4xl">
                       Contact Me
                     </h2>
