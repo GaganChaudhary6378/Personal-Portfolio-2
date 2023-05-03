@@ -3,14 +3,19 @@ import Link from "next/link";
 import Typewriter from "typewriter-effect";
 export default function landing() {
   return (
-    <div className="md:mt-[160px] mt-[600px]">
+    <div className="md:mt-[160px] mt-[600px] ">
       <h3 className="font-bold font-poppins md:mx-12 mx-[330px] w-[300px]">
         Welcome to my personal portfolio.
       </h3>
       <div className="mt-5 font-poppins font-bold text-[80px] leading-[100px] md:mx-12 ">
-        <p className="text-[#245D27] mx-[190px] w-[600px] md:mx-0">Hi! I’m Gagan</p>
+        <p className="text-[#245D27] mx-[190px] w-[600px] md:mx-0">
+          Hi! I’m Gagan
+        </p>
         {/* <p className="text-[#245D27]"> */}
-        <div id="app" className="text-[#54AE58] md:mx-0 mx-[78px] md:leading-none leading-[10rem] w-[900px] text-[76px]">
+        <div
+          id="app"
+          className="text-[#54AE58] md:mx-0 mx-[78px] md:leading-none leading-[10rem] w-[900px] text-[76px]"
+        >
           <Typewriter
             options={{
               strings: ["Full Stack Developer."],

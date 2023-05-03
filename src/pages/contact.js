@@ -75,10 +75,10 @@ export default function about() {
                 <div className="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
                   <div className="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14">
                     <div className="mb-7 flex flex-row gap-16 ml-[100px] text-3xl"> 
-                    <Link href="https://www.linkedin.com/in/gagan-chaudhary-443174216/"><TfiLinkedin className=" hover:cursor-pointer"/></Link>
-                    <Link href="https://twitter.com/GaganCh88472243?t=zv6kxbke1RgMP8Z4ebXEwQ&s=08"><BsTwitter className="hover:cursor-pointer"/></Link>
-                    <Link href="https://github.com/GaganChaudhary6378"><BsGithub className=" hover:cursor-pointer"/></Link>
-                    <Link href="mailto:singhgaganbtp@gmail.com"><AiFillMail className="hover:cursor-pointer"/></Link>
+                    <Link href="https://www.linkedin.com/in/gagan-chaudhary-443174216/"><TfiLinkedin className=" hover:cursor-pointer hover:text-[#245D27]"/></Link>
+                    <Link href="https://twitter.com/GaganCh88472243?t=zv6kxbke1RgMP8Z4ebXEwQ&s=08"><BsTwitter className="hover:cursor-pointer hover:text-[#245D27]"/></Link>
+                    <Link href="https://github.com/GaganChaudhary6378"><BsGithub className=" hover:cursor-pointer hover:text-[#245D27]"/></Link>
+                    <Link href="mailto:singhgaganbtp@gmail.com"><AiFillMail className="hover:cursor-pointer hover:text-[#245D27]"/></Link>
                     </div>
                     <h2 className="md:text-3xl font-bold mb-12 font-revalia text-[#245D27] text-4xl">
                       Contact Me

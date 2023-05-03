@@ -1,7 +1,7 @@
 export default function about(){
     return (
         <div>
-            This is my about page.
+            This is my experience page.
         </div>
     )
 }
