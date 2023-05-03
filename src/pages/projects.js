@@ -33,7 +33,7 @@ export default function about() {
         )} */}
       {/* </motion.div> */}
       <div className="flex flex-row">
-        <section className="ml-[45px] mt-[50px] w-[800px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg">
+        <section className="ml-[45px] mt-[50px] w-[800px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -54,10 +54,10 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] w-[600px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg">
+        <section className="ml-[45px] mt-[50px] w-[600px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              E-commerce Website(Loopcart)
+              Quizzical
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -78,7 +78,7 @@ export default function about() {
       {/* 2nd row */}
 
       <div className="flex flex-row">
-        <section className="ml-[45px] mt-[50px] w-[400px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg">
+        <section className="ml-[45px] mt-[50px] w-[400px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -100,10 +100,10 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] w-[600px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg">
+        <section className="ml-[45px] mt-[50px] w-[600px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              E-commerce Website(Loopcart)
+              Personal Dashboard
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -120,7 +120,7 @@ export default function about() {
           </button>
         </section>
 
-        <section className="ml-[45px] mt-[50px] w-[350px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg">
+        <section className="ml-[45px] mt-[50px] w-[350px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -142,7 +142,7 @@ export default function about() {
       </div>
 
       <div className="flex flex-row">
-        <section className="ml-[45px] mt-[50px] w-[300px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg">
+        <section className="ml-[45px] mt-[50px] w-[300px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -164,10 +164,10 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] w-[500px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg">
+        <section className="ml-[45px] mt-[50px] w-[500px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              E-commerce Website(Loopcart)
+              Chrome Extension
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -184,7 +184,7 @@ export default function about() {
           </button>
         </section>
 
-        <section className="ml-[45px] mt-[50px] w-[550px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg">
+        <section className="ml-[45px] mt-[50px] w-[550px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
