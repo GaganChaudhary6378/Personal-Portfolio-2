@@ -5,6 +5,7 @@ import { FiChevronsDown } from "react-icons/fi";
 
 export default function about() {
   const [isOpen, setisOpen] = React.useState(false);
+  const [isModal, setisModal] = React.useState(false);
   return (
     <div>
       {/* <motion.div
@@ -33,7 +34,7 @@ export default function about() {
         )} */}
       {/* </motion.div> */}
       <div className="flex flex-row">
-        <section className="ml-[45px] mt-[50px] w-[800px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+        <div className="ml-[45px] mt-[50px] w-[800px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -44,13 +45,16 @@ export default function about() {
           <div>
             <TbBrandNextjs />
           </div>
-          <button className="ml-[83%] mt-9 font-bold font-poppins">
+          <button
+            className="ml-[83%] mt-9 font-bold font-poppins"
+            onClick={() => setisModal(!isModal)}
+          >
             <span className="flex flex-row">
               See Details
               <FiChevronsDown className="mt-1" />
             </span>
           </button>
-        </section>
+        </div>
 
         {/* Second card */}
 

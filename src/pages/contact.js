@@ -1,15 +1,13 @@
-// import { useState } from "react";
 import React from "react";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
-// import { useEffect } from "react";
 import { TfiLinkedin} from 'react-icons/tfi';
 import {BsTwitter} from 'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 import {AiFillMail} from 'react-icons/ai';
-
+let nodemailer = require('nodemailer')
 
 export default function about() {
   const router=useRouter();
@@ -38,6 +36,7 @@ export default function about() {
       body: JSON.stringify(data),
     });
     let response = await res.json();
+    
     setName("");
     setEmail("");
     setMessage("");
