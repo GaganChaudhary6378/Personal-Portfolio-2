@@ -16,7 +16,7 @@ const handler = async (req, res) => {
     host: "smtp.gmail.com",
     auth: {
       user: "gss12111408@gmail.com",
-      pass: "mepqqsppvvxfwden",
+      pass: process.env.PASSWORD,
     },
     secure: true,
   });
