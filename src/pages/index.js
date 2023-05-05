@@ -3,7 +3,7 @@ import Link from "next/link";
 import Typewriter from "typewriter-effect";
 export default function landing() {
   return (
-    <div className="md:mt-[160px] mt-[600px] ">
+    <div className="md:mt-[160px] mt-[600px]">
       <h3 className="font-bold font-poppins md:mx-12 mx-[330px] w-[300px]">
         Welcome to my personal portfolio.
       </h3>

@@ -14,6 +14,7 @@
   }
 }
 
+
 @media screen and (max-width: 380px) {
   body {
     overflow-x: hidden;
@@ -54,13 +55,14 @@
   background-image: url("/Frame 1.png");
   background-size: 700px;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 250px;
   padding-top: 70px;
 }
 @media only screen and (max-width: 600px) {
   .btn {
     width: 1000px;
-    background-size: 1000px;
+    background-size: 1050px;
+    height: 315px;
     background-position-y:20px ;
     background-position-x: 40px;
   }
