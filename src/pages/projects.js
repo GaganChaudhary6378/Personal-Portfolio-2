@@ -33,11 +33,11 @@ export default function about() {
           </motion.div>
         )} */}
       {/* </motion.div> */}
-      <div className="flex flex-row">
-        <div className="ml-[45px] mt-[50px] w-[800px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+      <div className="flex md:flex-row flex-col">
+        <section className="ml-[45px] mt-[50px] md:w-[800px] w-[670px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              E-commerce Website(Loopcart)
+              Quizzical
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -45,20 +45,18 @@ export default function about() {
           <div>
             <TbBrandNextjs />
           </div>
-          <button
-            className="ml-[83%] mt-9 font-bold font-poppins"
-            onClick={() => setisModal(!isModal)}
-          >
+          <button className="ml-[80%] mt-9 font-bold font-poppins">
             <span className="flex flex-row">
+              {" "}
               See Details
               <FiChevronsDown className="mt-1" />
             </span>
           </button>
-        </div>
+        </section>
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] w-[600px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[600px] w-[670px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               Quizzical
@@ -81,8 +79,8 @@ export default function about() {
 
       {/* 2nd row */}
 
-      <div className="flex flex-row">
-        <section className="ml-[45px] mt-[50px] w-[400px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+      <div className="flex md:flex-row flex-col">
+        <section className="ml-[45px] mt-[50px] md:w-[400px] w-[670px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -104,7 +102,7 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] w-[600px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[600px] w-[670px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               Personal Dashboard
@@ -124,7 +122,8 @@ export default function about() {
           </button>
         </section>
 
-        <section className="ml-[45px] mt-[50px] w-[350px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        {/* 3rd card */}
+        <section className="ml-[45px] mt-[50px] md:w-[350px] w-[670px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -145,8 +144,8 @@ export default function about() {
         </section>
       </div>
 
-      <div className="flex flex-row">
-        <section className="ml-[45px] mt-[50px] w-[300px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+      <div className="flex md:flex-row flex-col">
+        <section className="ml-[45px] mt-[50px] md:w-[300px] w-[670px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -168,7 +167,7 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] w-[500px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[500px] w-[670px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               Chrome Extension
@@ -188,7 +187,7 @@ export default function about() {
           </button>
         </section>
 
-        <section className="ml-[45px] mt-[50px] w-[550px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[550px] w-[670px] bg-[#c6f9c9] h-[240px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
