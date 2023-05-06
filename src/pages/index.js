@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 export default function landing() {
   return (
     <div>
-      <Navbar/>
       <div className="md:mt-[160px] mt-[800px] md:ml-0 ml-[240px]">
         <h3 className="font-bold font-poppins md:mx-12 mx-[250px] w-[600px] md:text-sm text-2xl">
           Welcome to my personal portfolio.

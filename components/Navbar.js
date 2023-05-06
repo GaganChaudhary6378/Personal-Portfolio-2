@@ -20,9 +20,9 @@ export default function Navbar() {
     <div className="flex flex-row mx-6 font-poppins w-[1495px]">
       <div className="logo mr-auto md:mx-5">
         <Link href={"/"}>
-          <p className="md:w-80 md:text-3xl font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px] ">
+          <div className="md:w-80 md:text-3xl font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px] ">
             Gagan Chaudhary
-          </p>
+          </div>
         </Link>
       </div>
       <div className="mx-[38%] nav w-full">
@@ -54,13 +54,13 @@ export default function Navbar() {
     <div className="font-poppins ml-[430px] w-[1000px]">
       <div className="flex flex-row ">
       <Link href={"/"}>
-        <p className="font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px]">
+        <div className="font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px]">
           Gagan Chaudhary
-        </p>
+        </div>
       </Link>
-      <span className="mt-6 ml-[850px] text-4xl absolute">
+      <div className="mt-6 ml-[850px] text-4xl absolute">
         <FiMenu onClick={openMenu} />
-      </span>
+      </div>
       </div>
 
       <div

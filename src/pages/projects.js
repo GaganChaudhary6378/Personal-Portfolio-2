@@ -11,8 +11,7 @@ export default function about() {
   const windowSize=useWindowWidth();
   const width=windowSize-20;
   return (
-    <div>
-      <Navbar/>
+    <div className="">
       {/* <motion.div
         className="card1 bg-red-400"
         onClick={() => setisOpen(!isOpen)}
@@ -37,7 +36,7 @@ export default function about() {
             </p>
           </motion.div>
         )} */}
-      {/* </motion.div> */}
+      {/* </motion.div> */} 
       <div className="flex md:flex-row flex-col flex-wrap">
         
         <div className="ml-[45px] mt-[50px] md:w-[800px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
