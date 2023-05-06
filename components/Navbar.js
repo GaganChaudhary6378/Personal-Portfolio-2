@@ -59,9 +59,9 @@ export default function Navbar() {
           Gagan Chaudhary
         </p>
       </Link>
-      <span><FiMenu className=" mt-4 ml-[100px] text-4xl" onClick={openMenu}/></span>
+      <span className="fixed mt-4 ml-[920px] text-4xl"><FiMenu onClick={openMenu}/></span>
       </div>
-      <div ref={ref} className="w-60 h-[52vh] mr-[40px] fixed mt-[70px] sideCart overflow-y-scroll top-0 right-0 bg-[#eaffeb] px-6 py-10 z-10 hidden rounded-xl">
+      <div ref={ref} className="w-60 h-[52vh] mr-[40px] fixed mt-[70px] overflow-y-scroll top-0 right-0 bg-[#eaffeb] px-6 py-10 z-10 hidden rounded-xl">
         <ul>
         <Link href={"/experience"}><li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pb-5 pl-5 w-[130px]">Experience</li></Link>
         <Link href={"/projects"}><li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pl-5 pb-5 w-[95px]">Projects</li></Link>
