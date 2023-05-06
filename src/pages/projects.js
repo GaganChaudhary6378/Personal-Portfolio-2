@@ -3,6 +3,7 @@ import React from "react";
 import { useWindowWidth } from "@react-hook/window-size";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FiChevronsDown } from "react-icons/fi";
+import Navbar from "../../components/Navbar";
 
 export default function about() {
   const [isOpen, setisOpen] = React.useState(false);
@@ -11,7 +12,7 @@ export default function about() {
   const width=windowSize-20;
   return (
     <div>
-      <br></br>
+      <Navbar/>
       {/* <motion.div
         className="card1 bg-red-400"
         onClick={() => setisOpen(!isOpen)}
@@ -39,7 +40,7 @@ export default function about() {
       {/* </motion.div> */}
       <div className="flex md:flex-row flex-col flex-wrap">
         
-        <div className="ml-[45px] mt-[50px] md:w-[800px] w-[1200px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <div className="ml-[45px] mt-[50px] md:w-[800px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               Quizzical
@@ -61,7 +62,7 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] md:w-[600px] w-[1200px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[600px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               Quizzical
@@ -85,7 +86,7 @@ export default function about() {
       {/* 2nd row */}
 
       <div className="flex md:flex-row flex-col">
-        <section className="ml-[45px] mt-[50px] md:w-[400px] w-[1200px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[400px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -107,7 +108,7 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] md:w-[600px] w-[1200px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[600px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               Personal Dashboard
@@ -128,7 +129,7 @@ export default function about() {
         </section>
 
         {/* 3rd card */}
-        <section className="ml-[45px] mt-[50px] md:w-[350px] w-[1200px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[350px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -150,7 +151,7 @@ export default function about() {
       </div>
 
       <div className="flex md:flex-row flex-col w-[1400px]">
-        <section className="ml-[45px] mt-[50px] md:w-[300px] w-[1200px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[300px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)
@@ -172,7 +173,7 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] md:w-[500px] w-[1200px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[500px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               Chrome Extension
@@ -192,7 +193,7 @@ export default function about() {
           </button>
         </section>
 
-        <section className="ml-[45px] mt-[50px] md:w-[550px] w-[1200px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="ml-[45px] mt-[50px] md:w-[550px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
               E-commerce Website(Loopcart)

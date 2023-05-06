@@ -6,22 +6,21 @@ export default function Navbar() {
   const windowWidth = useWindowWidth();
   const ref = useRef();
 
-  function openMenu(){
-    if(ref.current.classList.contains("block")){
+  function openMenu() {
+    if (ref.current.classList.contains("block")) {
       ref.current.classList.remove("block");
       ref.current.classList.add("hidden");
-    }else if(
-      !ref.current.classList.contains("block")){
-        ref.current.classList.remove("hidden");
-        ref.current.classList.add("block");
-      }
+    } else if (!ref.current.classList.contains("block")) {
+      ref.current.classList.remove("hidden");
+      ref.current.classList.add("block");
+    }
   }
 
   return windowWidth > 440 ? (
-    <div className="flex flex-row mx-6 sticky font-poppins w-[1495px]">
+    <div className="flex flex-row mx-6 font-poppins w-[1495px]">
       <div className="logo mr-auto md:mx-5">
         <Link href={"/"}>
-          <p className="md:w-80 md:text-3xl font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px]">
+          <p className="md:w-80 md:text-3xl font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px] ">
             Gagan Chaudhary
           </p>
         </Link>
@@ -52,25 +51,46 @@ export default function Navbar() {
       </div>
     </div>
   ) : (
-    <div>
-      <div className="flex flex-row">
+    <div className="font-poppins ml-[430px] w-[1000px]">
+      <div className="flex flex-row ">
       <Link href={"/"}>
-        <p className="font-bold line-height-[39px] leading-6 font-poppins ml-[260px] mt-6 text-[#245D27] text-5xl w-[563px]">
+        <p className="font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px]">
           Gagan Chaudhary
         </p>
       </Link>
-      <span className="fixed mt-4 ml-[920px] text-4xl"><FiMenu onClick={openMenu}/></span>
+      <span className="mt-6 ml-[850px] text-4xl absolute">
+        <FiMenu onClick={openMenu} />
+      </span>
       </div>
-      <div ref={ref} className="w-60 h-[52vh] mr-[40px] fixed mt-[70px] overflow-y-scroll top-0 right-0 bg-[#eaffeb] px-6 py-10 z-10 hidden rounded-xl">
+
+      <div
+        ref={ref}
+        className="w-60 h-[56vh] mr-[110px] fixed mt-[70px] top-0 right-0 bg-[#eaffeb] px-6 py-10 z-10 hidden rounded-xl"
+      >
         <ul>
-        <Link href={"/experience"}><li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pb-5 pl-5 w-[130px]">Experience</li></Link>
-        <Link href={"/projects"}><li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pl-5 pb-5 w-[95px]">Projects</li></Link>
+          <Link href={"/experience"}>
+            <li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pb-5 pl-5 w-[130px]">
+              Experience
+            </li>
+          </Link>
+          <Link href={"/projects"}>
+            <li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pl-5 pb-5 w-[95px]">
+              Projects
+            </li>
+          </Link>
           <br></br>
-        <Link href={"/skills"}><li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pl-5 pb-5 w-[60px]">Skills</li></Link>
-        <Link href={"/contact"}><li className="nav-line nav-line-ani font-poppins font-bold text-center pl-5 text-2xl">Contact me</li></Link>
+          <Link href={"/skills"}>
+            <li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pl-5 pb-5 w-[60px]">
+              Skills
+            </li>
+          </Link>
+          <Link href={"/contact"}>
+            <li className="nav-line nav-line-ani font-poppins font-bold text-center pl-5 text-2xl">
+              Contact me
+            </li>
+          </Link>
         </ul>
       </div>
     </div>
   );
-  
 }
