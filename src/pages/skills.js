@@ -17,7 +17,7 @@ import Image from "next/image";
 
 export default function about() {
   return (
-    <div>
+    <div className="skills font-bold h-[980px]">
       {/* Web development */}
       <div className="mt-6 ml-12">
         <p className=" text-xl text-[#3fa244] font-semibold font-revalia">
