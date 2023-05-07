@@ -1,8 +1,15 @@
 import Link from "next/link";
+import { useEffect } from "react";
+import { useState } from "react";
 import { useRef } from "react";
 import { FiMenu } from "react-icons/fi";
 import { useWindowWidth } from "@react-hook/window-size";
 export default function Navbar() {
+  const [show, setShow] = useState(false);
+  // To remove the hydration effect
+  useEffect(() => {
+    setShow(true);
+  }, []);
   const windowWidth = useWindowWidth();
   const ref = useRef();
 
@@ -15,9 +22,10 @@ export default function Navbar() {
       ref.current.classList.add("block");
     }
   }
-
-  return windowWidth > 440 ? (
-    <div className="flex flex-row mx-6 font-poppins w-[1495px]">
+  
+  return (
+    windowWidth > 440 ? (
+    (show && <div className="flex flex-row mx-6 font-poppins w-[1495px]">
       <div className="logo mr-auto md:mx-5">
         <Link href={"/"}>
           <div className="md:w-80 md:text-3xl font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px] ">
@@ -49,8 +57,8 @@ export default function Navbar() {
           </Link>
         </ul>
       </div>
-    </div>
-  ) : (
+    </div>)
+  ) : ( show &&
     <div className="font-poppins ml-[430px] w-[1000px]">
       <div className="flex flex-row ">
       <Link href={"/"}>
@@ -59,7 +67,7 @@ export default function Navbar() {
         </div>
       </Link>
       <div className="mt-6 ml-[850px] text-4xl absolute">
-        <FiMenu onClick={openMenu} />
+        <p><FiMenu onClick={openMenu} /></p>
       </div>
       </div>
 
@@ -92,5 +100,5 @@ export default function Navbar() {
         </ul>
       </div>
     </div>
-  );
+  ));
 }
