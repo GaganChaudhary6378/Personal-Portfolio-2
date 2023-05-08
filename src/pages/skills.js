@@ -11,7 +11,6 @@ import { BsGit} from "react-icons/bs";
 import { AiFillGithub} from "react-icons/ai";
 import { IoLogoVercel} from "react-icons/io5";
 import { SiTypescript} from "react-icons/si";
-
 import Image from "next/image";
 
 

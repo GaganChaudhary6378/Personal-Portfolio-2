@@ -123,5 +123,11 @@
   background-size: 2000px;
   background-position-y: 450px;
  
-  
+}
+
+.bx1{
+  background-image: url("/prb.jpg");
+  background-size: 900px;
+  width: 500px;
+  background-repeat: no-repeat;
 }

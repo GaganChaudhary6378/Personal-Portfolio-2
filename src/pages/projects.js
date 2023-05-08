@@ -1,17 +1,28 @@
-import { motion } from "framer-motion";
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { useWindowWidth } from "@react-hook/window-size";
+import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FiChevronsDown } from "react-icons/fi";
-import Navbar from "../../components/Navbar";
-
+import { SiMongodb } from "react-icons/si";
+import { IoLogoNodejs} from "react-icons/io";
+import { IoLogoVercel} from "react-icons/io5";
+import { FaStripe} from "react-icons/fa";
+import { SiCss3 } from "react-icons/si";
+import Image from "next/image";
 export default function about() {
   const [isOpen, setisOpen] = React.useState(false);
   const [isModal, setisModal] = React.useState(false);
   const windowSize=useWindowWidth();
+  const [show, setShow] = useState(false);
+  // To remove the hydration effect
+  useEffect(() => {
+    setShow(true);
+  }, []);
   const width=windowSize-20;
   return (
-    <div className="">
+    (show && <div className="h-[900px]">
       {/* <motion.div
         className="card1 bg-red-400"
         onClick={() => setisOpen(!isOpen)}
@@ -39,18 +50,23 @@ export default function about() {
       {/* </motion.div> */} 
       <div className="flex md:flex-row flex-col flex-wrap">
         
-        <div className="ml-[45px] mt-[50px] md:w-[800px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <div className="bx1 ml-[45px] mt-[50px] md:w-[800px] w-[1270px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              Quizzical
+              E-commerce Website
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
           <h2 className="mt-5 font-poppins">Languages Used:</h2>
-          <div>
-            <TbBrandNextjs />
+          <div className="mt-3 flex flex-row text-4xl">
+            <TbBrandNextjs className=" "/>
+            <FaReact className="ml-5 text-blue-400"/>
+            <IoLogoNodejs className="ml-5 text-green-500"/>
+            <SiMongodb className="ml-5 text-green-800"/>
+            <IoLogoVercel className="ml-5"/>
+            <FaStripe className="ml-5 text-blue-700"/>
           </div>
-          <button className="ml-[80%] mt-9 font-bold font-poppins">
+          <button className="ml-[85%] mt-7 font-bold font-poppins">
             <span className="flex flex-row">
               {" "}
               See Details
@@ -61,18 +77,21 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] md:w-[600px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              Quizzical
+              Quizzee
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
           <h2 className="mt-5 font-poppins">Languages Used:</h2>
-          <div>
-            <TbBrandNextjs />
+          <div className="mt-3 flex flex-row text-4xl">
+            <FaReact className="ml-0 text-blue-400"/>
+            <SiCss3 className="ml-5 text-blue-700"/>
+            <Image src="/vite.svg" width={40} height={30} className="ml-5 h-[33px]"/>
+            <IoLogoVercel className="ml-5"/>
           </div>
-          <button className="ml-[80%] mt-9 font-bold font-poppins">
+          <button className="ml-[80%] mt-7 font-bold font-poppins">
             <span className="flex flex-row">
               {" "}
               See Details
@@ -85,10 +104,10 @@ export default function about() {
       {/* 2nd row */}
 
       <div className="flex md:flex-row flex-col">
-        <section className="ml-[45px] mt-[50px] md:w-[400px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="bx1 ml-[45px] mt-[50px] md:w-[400px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              E-commerce Website(Loopcart)
+              Tenzies Game
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -96,7 +115,7 @@ export default function about() {
           <div>
             <TbBrandNextjs />
           </div>
-          <button className="ml-[70%] mt-3 font-bold font-poppins">
+          <button className="ml-[70%] mt-9 font-bold font-poppins">
             <span className="flex flex-row">
               {" "}
               See Details
@@ -107,10 +126,10 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] md:w-[600px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              Personal Dashboard
+              Meme Generator
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -118,7 +137,7 @@ export default function about() {
           <div>
             <TbBrandNextjs />
           </div>
-          <button className="ml-[80%] mt-3 font-bold font-poppins">
+          <button className="ml-[80%] mt-2 font-bold font-poppins">
             <span className="flex flex-row">
               {" "}
               See Details
@@ -128,10 +147,10 @@ export default function about() {
         </section>
 
         {/* 3rd card */}
-        <section className="ml-[45px] mt-[50px] md:w-[350px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg  hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="bx1 ml-[45px] mt-[50px] md:w-[350px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              E-commerce Website(Loopcart)
+              Travel Journal
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -139,7 +158,7 @@ export default function about() {
           <div>
             <TbBrandNextjs />
           </div>
-          <button className="ml-[67%] mt-3 font-bold font-poppins">
+          <button className="ml-[67%] mt-7 font-bold font-poppins">
             <span className="flex flex-row">
               {" "}
               See Details
@@ -149,11 +168,11 @@ export default function about() {
         </section>
       </div>
 
-      <div className="flex md:flex-row flex-col w-[1400px]">
-        <section className="ml-[45px] mt-[50px] md:w-[300px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+      <div className="flex md:flex-row flex-col w-[1400px] md:w-[1500px]">
+        <section className="bx1 ml-[45px] mt-[50px] md:w-[300px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              E-commerce Website(Loopcart)
+              Chrome Dashboard
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -161,7 +180,7 @@ export default function about() {
           <div>
             <TbBrandNextjs />
           </div>
-          <button className="ml-[60%] mt-4 font-bold font-poppins">
+          <button className="ml-[60%] mt-9 font-bold font-poppins">
             <span className="flex flex-row">
               {" "}
               See Details
@@ -172,10 +191,10 @@ export default function about() {
 
         {/* Second card */}
 
-        <section className="ml-[45px] mt-[50px] md:w-[500px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="bx1 ml-[45px] mt-[50px] md:w-[500px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              Chrome Extension
+              Game of war
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -183,7 +202,7 @@ export default function about() {
           <div>
             <TbBrandNextjs />
           </div>
-          <button className="ml-[77%] mt-5 font-bold font-poppins">
+          <button className="ml-[77%] mt-3 font-bold font-poppins">
             <span className="flex flex-row">
               {" "}
               See Details
@@ -192,10 +211,10 @@ export default function about() {
           </button>
         </section>
 
-        <section className="ml-[45px] mt-[50px] md:w-[550px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-800 shadow-lg hover:shadow-lime-800 hover:shadow-2xl">
+        <section className="bx1 ml-[45px] mt-[50px] md:w-[550px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
           <div>
             <p className="font-revalia flex flex-row justify-center text-xl">
-              E-commerce Website(Loopcart)
+              Weather App
             </p>
             <p className="font-poppins leading-[60px]">Description 👇</p>
           </div>
@@ -203,7 +222,7 @@ export default function about() {
           <div>
             <TbBrandNextjs />
           </div>
-          <button className="ml-[80%] mt-5 font-bold font-poppins">
+          <button className="ml-[80%] mt-2   font-bold font-poppins">
             <span className="flex flex-row">
               {" "}
               See Details
@@ -212,6 +231,6 @@ export default function about() {
           </button>
         </section>
       </div>
-    </div>
+    </div>)
   );
 }
