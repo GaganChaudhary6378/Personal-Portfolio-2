@@ -107,7 +107,10 @@ export default function about() {
               <ModalHeader>Modal Title</ModalHeader>
              
               <ModalBody>
-                <p>Hi</p>
+                <h3>E-Commerce Website</h3>
+                <p>Here there will be a image startup.</p>
+                <h2>Description</h2>
+                <p>Here there should be brief description about project.</p>
               </ModalBody>
               
             </ModalContent>
