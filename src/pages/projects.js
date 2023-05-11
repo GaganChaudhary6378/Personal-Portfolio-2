@@ -100,7 +100,7 @@ export default function about() {
               </span>
             </button>
           </div>
-          <Modal onClose={onClose} isOpen={isOpen} isCentered >
+          <Modal onClose={onClose} isOpen={isOpen} isCentered>
             <ModalOverlay />
             <ModalContent w="40%" ml="25%" mt="10%"  h="550px" bg="gray" borderRadius="8px">
             <ModalCloseButton ml="570px" mt="2%" />
@@ -137,7 +137,7 @@ export default function about() {
               />
               <IoLogoVercel className="ml-5" />
             </div>
-            <button className="ml-[80%] mt-7 font-bold font-poppins">
+            <button className="ml-[80%] mt-7 font-bold font-poppins" onClick={onOpen}>
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -145,6 +145,21 @@ export default function about() {
               </span>
             </button>
           </section>
+          <Modal onClose={onClose} isOpen={isOpen} isCentered>
+            <ModalOverlay />
+            <ModalContent w="40%" ml="25%" mt="10%"  h="550px" bg="gray" borderRadius="8px">
+            <ModalCloseButton ml="570px" mt="2%" />
+              <ModalHeader>Modal Title</ModalHeader>
+             
+              <ModalBody>
+                <h3>E-Commerce Website</h3>
+                <p>Here there will be a image startup.</p>
+                <h2>Description</h2>
+                <p>Here there should be brief description about project.</p>
+              </ModalBody>
+              
+            </ModalContent>
+          </Modal>
         </div>
 
         {/* 2nd row */}
