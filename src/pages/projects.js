@@ -11,13 +11,7 @@ import { IoLogoVercel } from "react-icons/io5";
 import { FaStripe } from "react-icons/fa";
 import { SiCss3 } from "react-icons/si";
 import { Modal } from "@chakra-ui/react";
-import { useDisclosure } from "@chakra-ui/react";
-import { ModalOverlay } from "@chakra-ui/react";
-import { ModalContent } from "@chakra-ui/react";
-import { ModalHeader } from "@chakra-ui/react";
-import { ModalCloseButton } from "@chakra-ui/react";
-import { ModalBody } from "@chakra-ui/react";
-import { ModalFooter } from "@chakra-ui/react";
+import { useDisclosure,ModalOverlay ,ModalContent, ModalHeader,ModalCloseButton,ModalBody} from "@chakra-ui/react";
 // import {
 //   Modal,
 //   useDisclosure,
@@ -73,7 +67,7 @@ export default function about() {
         )} */}
         {/* </motion.div> */}
         <div className="flex md:flex-row flex-col flex-wrap">
-          <div className="bx1 ml-[45px] mt-[50px] md:w-[800px] w-[1270px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <div className="bx1 ml-[45px] mt-[50px] md:w-[800px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center text-xl">
                 E-commerce Website
@@ -118,7 +112,7 @@ export default function about() {
 
           {/* Second card */}
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px]  md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center text-xl">
                 Quizzee
@@ -165,7 +159,7 @@ export default function about() {
         {/* 2nd row */}
 
         <div className="flex md:flex-row flex-col">
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[400px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[400px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center text-xl">
                 Tenzies Game
@@ -187,7 +181,7 @@ export default function about() {
 
           {/* Second card */}
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center text-xl">
                 Meme Generator
@@ -208,7 +202,7 @@ export default function about() {
           </section>
 
           {/* 3rd card */}
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[350px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[350px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center text-xl">
                 Travel Journal
@@ -230,7 +224,7 @@ export default function about() {
         </div>
 
         <div className="flex md:flex-row flex-col w-[1400px] md:w-[1500px]">
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[300px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[300px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center text-xl">
                 Chrome Dashboard
@@ -252,7 +246,7 @@ export default function about() {
 
           {/* Second card */}
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[500px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[500px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center text-xl">
                 Game of war
@@ -272,7 +266,7 @@ export default function about() {
             </button>
           </section>
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[550px] w-[1270px] bg-[#c6f9c9] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[550px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center text-xl">
                 Weather App

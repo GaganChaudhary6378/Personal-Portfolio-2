@@ -66,14 +66,14 @@ export default function Navbar() {
           Gagan Chaudhary
         </div>
       </Link>
-      <div className="mt-6 ml-[850px] text-4xl absolute">
+      <div className="mt-6 ml-[880px] text-4xl absolute">
         <p><FiMenu onClick={openMenu} /></p>
       </div>
       </div>
 
       <div
         ref={ref}
-        className="w-60 h-[56vh] mr-[110px] fixed mt-[70px] top-0 right-0 bg-[#eaffeb] px-6 py-10 z-10 hidden rounded-xl"
+        className="w-60 h-[56vh] mr-[86px] fixed mt-[70px] top-0 right-0 bg-[#eaffeb] px-6 py-10 z-10 hidden rounded-xl"
       >
         <ul>
           <Link href={"/experience"}>
