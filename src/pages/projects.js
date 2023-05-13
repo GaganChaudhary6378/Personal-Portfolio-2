@@ -11,7 +11,15 @@ import { IoLogoVercel } from "react-icons/io5";
 import { FaStripe } from "react-icons/fa";
 import { SiCss3 } from "react-icons/si";
 import { Modal } from "@chakra-ui/react";
-import { useDisclosure,ModalOverlay ,ModalContent, ModalHeader,ModalCloseButton,ModalBody} from "@chakra-ui/react";
+import {
+  useDisclosure,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+} from "@chakra-ui/react";
+
 // import {
 //   Modal,
 //   useDisclosure,
@@ -67,15 +75,15 @@ export default function about() {
         )} */}
         {/* </motion.div> */}
         <div className="flex md:flex-row flex-col flex-wrap">
-          <div className="bx1 ml-[45px] mt-[50px] md:w-[800px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <div className="bx1 ml-[45px] mt-[50px] md:w-[800px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center text-xl">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 E-commerce Website
               </p>
-              <p className="font-poppins leading-[60px]">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
             </div>
-            <h2 className="mt-5 font-poppins">Languages Used:</h2>
-            <div className="mt-3 flex flex-row text-4xl">
+            <h2 className="md:mt-5 font-poppins  md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <div className="md:mt-3 flex flex-row md:text-4xl text-7xl mt-[40px]">
               <TbBrandNextjs className=" " />
               <FaReact className="ml-5 text-blue-400" />
               <IoLogoNodejs className="ml-5 text-green-500" />
@@ -84,7 +92,7 @@ export default function about() {
               <FaStripe className="ml-5 text-blue-700" />
             </div>
             <button
-              className="ml-[85%] mt-7 font-bold font-poppins"
+              className="ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl"
               onClick={onOpen}
             >
               <span className="flex flex-row">
@@ -94,44 +102,54 @@ export default function about() {
               </span>
             </button>
           </div>
+
           <Modal onClose={onClose} isOpen={isOpen} isCentered>
             <ModalOverlay />
-            <ModalContent w="40%" ml="25%" mt="10%"  h="550px" bg="gray" borderRadius="8px">
-            <ModalCloseButton ml="570px" mt="2%" />
+            <ModalContent
+              w="40%"
+              ml="25%"
+              mt="10%"
+              h="550px"
+              bg="gray"
+              borderRadius="8px"
+            >
+              <ModalCloseButton ml="570px" mt="2%" />
               <ModalHeader>Modal Title</ModalHeader>
-             
+
               <ModalBody>
                 <h3>E-Commerce Website</h3>
                 <p>Here there will be a image startup.</p>
                 <h2>Description</h2>
                 <p>Here there should be brief description about project.</p>
               </ModalBody>
-              
             </ModalContent>
           </Modal>
 
           {/* Second card */}
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px]  md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px]  md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center text-xl">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Quizzee
               </p>
-              <p className="font-poppins leading-[60px]">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
             </div>
-            <h2 className="mt-5 font-poppins">Languages Used:</h2>
-            <div className="mt-3 flex flex-row text-4xl">
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <div className="md:mt-3 flex flex-row md:text-4xl text-7xl mt-[40px]">
               <FaReact className="ml-0 text-blue-400" />
               <SiCss3 className="ml-5 text-blue-700" />
               <Image
                 src="/vite.svg"
                 width={40}
                 height={30}
-                className="ml-5 h-[33px]"
+                className="ml-5 md:h-[33px] md:w-[40px] w-[100px] h-[75px]"
               />
               <IoLogoVercel className="ml-5" />
             </div>
-            <button className="ml-[80%] mt-7 font-bold font-poppins" onClick={onOpen}>
+            <button
+              className="md:ml-[80%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl"
+              onClick={onOpen}
+            >
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -141,17 +159,23 @@ export default function about() {
           </section>
           <Modal onClose={onClose} isOpen={isOpen} isCentered>
             <ModalOverlay />
-            <ModalContent w="40%" ml="25%" mt="10%"  h="550px" bg="gray" borderRadius="8px">
-            <ModalCloseButton ml="570px" mt="2%" />
+            <ModalContent
+              w="40%"
+              ml="25%"
+              mt="10%"
+              h="550px"
+              bg="gray"
+              borderRadius="8px"
+            >
+              <ModalCloseButton ml="570px" mt="2%" />
               <ModalHeader>Modal Title</ModalHeader>
-             
+
               <ModalBody>
                 <h3>E-Commerce Website</h3>
                 <p>Here there will be a image startup.</p>
                 <h2>Description</h2>
                 <p>Here there should be brief description about project.</p>
               </ModalBody>
-              
             </ModalContent>
           </Modal>
         </div>
@@ -159,18 +183,18 @@ export default function about() {
         {/* 2nd row */}
 
         <div className="flex md:flex-row flex-col">
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[400px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[400px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center text-xl">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Tenzies Game
               </p>
-              <p className="font-poppins leading-[60px]">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
             </div>
-            <h2 className="mt-5 font-poppins">Languages Used:</h2>
-            <div>
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="ml-[70%] mt-9 font-bold font-poppins">
+            <button className="md:ml-[70%] ml-[85%] md:mt-9 font-bold font-poppins md:text-base text-3xl mt-8">
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -181,18 +205,18 @@ export default function about() {
 
           {/* Second card */}
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center text-xl">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Meme Generator
               </p>
-              <p className="font-poppins leading-[60px]">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
             </div>
-            <h2 className="mt-11 font-poppins">Languages Used:</h2>
-            <div>
+            <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="ml-[80%] mt-2 font-bold font-poppins">
+            <button className="md:ml-[80%] md:mt-2 mt-6 font-bold font-poppins md:text-base text-3xl ml-[85%]">
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -202,18 +226,18 @@ export default function about() {
           </section>
 
           {/* 3rd card */}
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[350px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[350px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center text-xl">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Travel Journal
               </p>
-              <p className="font-poppins leading-[60px]">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
             </div>
-            <h2 className="mt-5 font-poppins">Languages Used:</h2>
-            <div>
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="ml-[67%] mt-7 font-bold font-poppins">
+            <button className="md:ml-[67%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl">
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -224,18 +248,18 @@ export default function about() {
         </div>
 
         <div className="flex md:flex-row flex-col w-[1400px] md:w-[1500px]">
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[300px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[300px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center text-xl">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Chrome Dashboard
               </p>
-              <p className="font-poppins leading-[60px]">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
             </div>
-            <h2 className="mt-5 font-poppins">Languages Used:</h2>
-            <div>
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="ml-[60%] mt-9 font-bold font-poppins">
+            <button className="md:ml-[60%] ml-[85%] mt-9 font-bold font-poppins md:text-base text-3xl">
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -246,18 +270,18 @@ export default function about() {
 
           {/* Second card */}
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[500px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[500px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center text-xl">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Game of war
               </p>
-              <p className="font-poppins leading-[60px]">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
             </div>
-            <h2 className="mt-11 font-poppins">Languages Used:</h2>
-            <div>
+            <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="ml-[77%] mt-3 font-bold font-poppins">
+            <button className="md:ml-[77%] ml-[85%] md:mt-3 mt-6 font-bold font-poppins md:text-base text-3xl">
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -266,18 +290,18 @@ export default function about() {
             </button>
           </section>
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[550px] w-[1328px] md:h-[240px] h-[400px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[550px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center text-xl">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Weather App
               </p>
-              <p className="font-poppins leading-[60px]">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
             </div>
-            <h2 className="mt-11 font-poppins">Languages Used:</h2>
-            <div>
+            <h2 className="md:mt-11 font-poppins mt-[100px] md:text-base text-4xl">Languages Used:</h2>
+            <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="ml-[80%] mt-2   font-bold font-poppins">
+            <button className="md:ml-[80%] ml-[85%] md:mt-2 mt-6 font-bold font-poppins md:text-base text-3xl">
               <span className="flex flex-row">
                 {" "}
                 See Details
