@@ -19,7 +19,8 @@ import {
   ModalCloseButton,
   ModalBody,
 } from "@chakra-ui/react";
-
+import * as fs from "fs";
+// import Navbar from "../../components/Navbar";
 // import {
 //   Modal,
 //   useDisclosure,
@@ -32,15 +33,19 @@ import {
 //   ModalFooter,
 // } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
+
 import Image from "next/image";
 
-export default function about() {
+export default function about(props) {
   // const [isOpen, setisOpen] = React.useState(false);
-  const [isModal, setisModal] = React.useState(false);
+  console.log();
+
   const windowSize = useWindowWidth();
   const [show, setShow] = useState(false);
   // To remove the hydration effect
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const modal1=useDisclosure();
+  const modal2=useDisclosure();
+
 
   useEffect(() => {
     setShow(true);
@@ -80,9 +85,13 @@ export default function about() {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 E-commerce Website
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+                Description 👇
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins  md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <h2 className="md:mt-5 font-poppins  md:text-base text-4xl mt-[100px]">
+              Languages Used:
+            </h2>
             <div className="md:mt-3 flex flex-row md:text-4xl text-7xl mt-[40px]">
               <TbBrandNextjs className=" " />
               <FaReact className="ml-5 text-blue-400" />
@@ -93,7 +102,7 @@ export default function about() {
             </div>
             <button
               className="ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl"
-              onClick={onOpen}
+              onClick={modal1.onOpen}
             >
               <span className="flex flex-row">
                 {" "}
@@ -102,28 +111,29 @@ export default function about() {
               </span>
             </button>
           </div>
+          <div>
+            <Modal onClose={modal1.onClose} isOpen={modal1.isOpen} isCentered>
+              <ModalOverlay />
+              <ModalContent
+                w="40%"
+                ml="25%"
+                mt="10%"
+                h="550px"
+                bg="gray"
+                borderRadius="8px"
+              >
+                <ModalCloseButton ml="570px" mt="2%" />
+                <ModalHeader>{props.allItems[0].title}</ModalHeader>
 
-          <Modal onClose={onClose} isOpen={isOpen} isCentered>
-            <ModalOverlay />
-            <ModalContent
-              w="40%"
-              ml="25%"
-              mt="10%"
-              h="550px"
-              bg="gray"
-              borderRadius="8px"
-            >
-              <ModalCloseButton ml="570px" mt="2%" />
-              <ModalHeader>Modal Title</ModalHeader>
-
-              <ModalBody>
-                <h3>E-Commerce Website</h3>
-                <p>Here there will be a image startup.</p>
-                <h2>Description</h2>
-                <p>Here there should be brief description about project.</p>
-              </ModalBody>
-            </ModalContent>
-          </Modal>
+                <ModalBody>
+                 
+                  <p>Here there will be a image startup.</p>
+                  <h2>Description</h2>
+                  <p>{props.allItems[0].description}</p>
+                </ModalBody>
+              </ModalContent>
+            </Modal>
+          </div>
 
           {/* Second card */}
 
@@ -132,9 +142,13 @@ export default function about() {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Quizzee
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+                Description 👇
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">
+              Languages Used:
+            </h2>
             <div className="md:mt-3 flex flex-row md:text-4xl text-7xl mt-[40px]">
               <FaReact className="ml-0 text-blue-400" />
               <SiCss3 className="ml-5 text-blue-700" />
@@ -148,7 +162,7 @@ export default function about() {
             </div>
             <button
               className="md:ml-[80%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl"
-              onClick={onOpen}
+              onClick={modal2.onOpen}
             >
               <span className="flex flex-row">
                 {" "}
@@ -157,27 +171,29 @@ export default function about() {
               </span>
             </button>
           </section>
-          <Modal onClose={onClose} isOpen={isOpen} isCentered>
-            <ModalOverlay />
-            <ModalContent
-              w="40%"
-              ml="25%"
-              mt="10%"
-              h="550px"
-              bg="gray"
-              borderRadius="8px"
-            >
-              <ModalCloseButton ml="570px" mt="2%" />
-              <ModalHeader>Modal Title</ModalHeader>
+          <div>
+            <Modal onClose={modal2.onClose} isOpen={modal2.isOpen} isCentered>
+              <ModalOverlay />
+              <ModalContent
+                w="40%"
+                ml="25%"
+                mt="10%"
+                h="550px"
+                bg="gray"
+                borderRadius="8px"
+              >
+                <ModalCloseButton ml="570px" mt="2%" />
+                <ModalHeader>Modal Title</ModalHeader>
 
-              <ModalBody>
-                <h3>E-Commerce Website</h3>
-                <p>Here there will be a image startup.</p>
-                <h2>Description</h2>
-                <p>Here there should be brief description about project.</p>
-              </ModalBody>
-            </ModalContent>
-          </Modal>
+                <ModalBody>
+                  <h3>E-Commerce Website</h3>
+                  <p>Here there will be a image startup.</p>
+                  <h2>Description</h2>
+                  <p>Hello</p>
+                </ModalBody>
+              </ModalContent>
+            </Modal>
+          </div>
         </div>
 
         {/* 2nd row */}
@@ -188,9 +204,13 @@ export default function about() {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Tenzies Game
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+                Description 👇
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">
+              Languages Used:
+            </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
@@ -210,9 +230,13 @@ export default function about() {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Meme Generator
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+                Description 👇
+              </p>
             </div>
-            <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px]">
+              Languages Used:
+            </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
@@ -231,9 +255,13 @@ export default function about() {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Travel Journal
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+                Description 👇
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">
+              Languages Used:
+            </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
@@ -253,9 +281,13 @@ export default function about() {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Chrome Dashboard
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+                Description 👇
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">
+              Languages Used:
+            </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
@@ -275,9 +307,13 @@ export default function about() {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Game of war
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+                Description 👇
+              </p>
             </div>
-            <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px]">Languages Used:</h2>
+            <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px]">
+              Languages Used:
+            </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
@@ -295,9 +331,13 @@ export default function about() {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
                 Weather App
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">Description 👇</p>
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+                Description 👇
+              </p>
             </div>
-            <h2 className="md:mt-11 font-poppins mt-[100px] md:text-base text-4xl">Languages Used:</h2>
+            <h2 className="md:mt-11 font-poppins mt-[100px] md:text-base text-4xl">
+              Languages Used:
+            </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
@@ -313,4 +353,18 @@ export default function about() {
       </div>
     )
   );
+}
+
+export async function getStaticProps(context) {
+  let data = await fs.promises.readdir("Data");
+  let myFile;
+  let allItems = [];
+  for (let index = 0; index < data.length; index++) {
+    const item = data[index];
+    myFile = await fs.promises.readFile("Data/" + item, "utf-8");
+    allItems.push(JSON.parse(myFile));
+  }
+  return {
+    props: { allItems },
+  };
 }
