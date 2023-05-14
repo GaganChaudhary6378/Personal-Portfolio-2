@@ -19,7 +19,10 @@ import {
   ModalCloseButton,
   ModalBody,
 } from "@chakra-ui/react";
-import * as fs from "fs";
+
+import { getLocalData } from "./localData";
+// import * as fs from "fs";
+
 // import Navbar from "../../components/Navbar";
 // import {
 //   Modal,
@@ -36,9 +39,18 @@ import { Button } from "@chakra-ui/react";
 
 import Image from "next/image";
 
+
+export async function getStaticProps() {
+  const localData = await getLocalData()
+
+  return {
+    props: { localData }
+  }
+}
+
 export default function about(props) {
   // const [isOpen, setisOpen] = React.useState(false);
-  console.log();
+  console.log(props);
 
   const windowSize = useWindowWidth();
   const [show, setShow] = useState(false);
@@ -130,13 +142,13 @@ export default function about(props) {
                 overflowY="scroll"
               >
                 <ModalCloseButton ml="580px" mt="1%" position="fixed"/>
-                <ModalHeader ml="2%" mt="2%">{props.allItems[0].title}</ModalHeader>
+                <ModalHeader ml="2%" mt="2%">{props.localData.title}</ModalHeader>
 
                 <ModalBody ml="2%" mr="2%" mt="50%">
                  
                   <p>Here there will be a image startup.</p>
                   <h2>Description</h2>
-                  <p>{props.allItems[0].description}</p>
+                  <p>{props.localData.description}</p>
                 </ModalBody>
               </ModalContent>
             </Modal>
@@ -362,16 +374,17 @@ export default function about(props) {
   );
 }
 
-export async function getStaticProps(context) {
-  let data = await fs.promises.readdir("Data");
-  let myFile;
-  let allItems = [];
-  for (let index = 0; index < data.length; index++) {
-    const item = data[index];
-    myFile = await fs.promises.readFile("Data/" + item, "utf-8");
-    allItems.push(JSON.parse(myFile));
-  }
-  return {
-    props: { allItems },
-  };
-}
+// export async function getStaticProps(context) {
+//   let data = await fs.promises.readdir("Data");
+//   let myFile;
+//   let allItems = [];
+//   for (let index = 0; index < data.length; index++) {
+//     const item = data[index];
+//     myFile = await fs.promises.readFile("Data/" + item, "utf-8");
+//     allItems.push(JSON.parse(myFile));
+//   }
+//   return {
+//     props: { allItems },
+//   };
+// }
+
