@@ -19,8 +19,8 @@ import {
   ModalCloseButton,
   ModalBody,
 } from "@chakra-ui/react";
-
 import { getLocalData } from "./localData";
+import Herosection from "./herosection";
 // import * as fs from "fs";
 
 // import Navbar from "../../components/Navbar";
@@ -39,13 +39,12 @@ import { Button } from "@chakra-ui/react";
 
 import Image from "next/image";
 
-
 export async function getStaticProps() {
-  const localData = await getLocalData()
+  const localData = await getLocalData();
 
   return {
-    props: { localData }
-  }
+    props: { localData },
+  };
 }
 
 export default function about(props) {
@@ -55,10 +54,12 @@ export default function about(props) {
   const windowSize = useWindowWidth();
   const [show, setShow] = useState(false);
   // To remove the hydration effect
-  const modal1=useDisclosure();
-  const modal2=useDisclosure();
-  
-
+  const modal1 = useDisclosure();
+  const modal2 = useDisclosure();
+  const modal3 = useDisclosure();
+  const modal4 = useDisclosure();
+  const modal5 = useDisclosure();
+  const modal6 = useDisclosure();
 
   useEffect(() => {
     setShow(true);
@@ -124,14 +125,20 @@ export default function about(props) {
               </span>
             </button>
           </div>
-          <div >
-            <Modal className="modal" onClose={modal1.onClose} isOpen={modal1.isOpen} isCentered  blockScrollOnMount={false} >
+          <div>
+            <Modal
+              className="modal"
+              onClose={modal1.onClose}
+              isOpen={modal1.isOpen}
+              isCentered
+              blockScrollOnMount={false}
+            >
               <ModalOverlay />
               <ModalContent
                 css={{
-                  '&::-webkit-scrollbar':{
-                    display:"none"
-                  }
+                  "&::-webkit-scrollbar": {
+                    display: "none",
+                  },
                 }}
                 w="40%"
                 ml="25%"
@@ -141,11 +148,21 @@ export default function about(props) {
                 borderRadius="8px"
                 overflowY="scroll"
               >
-                <ModalCloseButton ml="580px" mt="1%" position="fixed"/>
-                <ModalHeader ml="2%" mt="2%">{props.localData.title}</ModalHeader>
+                <ModalCloseButton ml="580px" mt="1%" position="fixed" zIndex="6" />
+                <ModalHeader
+                  ml="14.3%"
+                  mt="0.7%"
+                  fontWeight="bold"
+                  position="fixed"
+                  zIndex="6"
+                >
+                  {props.localData.title}
+                </ModalHeader>
 
-                <ModalBody ml="2%" mr="2%" mt="50%">
-                 
+                <ModalBody ml="2%" mr="2%" mt="10%" mb="2%">
+                  <div className="ml-[4px]">
+                    <Herosection />
+                  </div>
                   <p>Here there will be a image startup.</p>
                   <h2>Description</h2>
                   <p>{props.localData.description}</p>
@@ -172,6 +189,7 @@ export default function about(props) {
               <FaReact className="ml-0 text-blue-400" />
               <SiCss3 className="ml-5 text-blue-700" />
               <Image
+                alt="logo"
                 src="/vite.svg"
                 width={40}
                 height={30}
@@ -233,13 +251,57 @@ export default function about(props) {
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="md:ml-[70%] ml-[85%] md:mt-9 font-bold font-poppins md:text-base text-3xl mt-8">
+            <button
+              className="md:ml-[70%] ml-[85%] md:mt-9 font-bold font-poppins md:text-base text-3xl mt-8"
+              onClick={modal3.onOpen}
+            >
               <span className="flex flex-row">
                 {" "}
                 See Details
                 <FiChevronsDown className="mt-1" />
               </span>
             </button>
+            <div>
+              <Modal
+                className="modal"
+                onClose={modal3.onClose}
+                isOpen={modal3.isOpen}
+                isCentered
+                blockScrollOnMount={false}
+              >
+                <ModalOverlay />
+                <ModalContent
+                  css={{
+                    "&::-webkit-scrollbar": {
+                      display: "none",
+                    },
+                  }}
+                  w="40%"
+                  ml="25%"
+                  mt="10%"
+                  h="550px"
+                  bg="gray"
+                  borderRadius="8px"
+                  overflowY="scroll"
+                >
+                  <ModalCloseButton ml="580px" mt="1%" position="fixed" />
+                  <ModalHeader
+                    ml="14.3%"
+                    mt="0.7%"
+                    fontWeight="bold"
+                    position="fixed"
+                  >
+                    {props.localData.title}
+                  </ModalHeader>
+
+                  <ModalBody ml="2%" mr="2%" mt="50%" mb="2%">
+                    <p>Here there will be a image startup.</p>
+                    <h2>Description</h2>
+                    <p>{props.localData.description}</p>
+                  </ModalBody>
+                </ModalContent>
+              </Modal>
+            </div>
           </section>
 
           {/* Second card */}
@@ -387,4 +449,3 @@ export default function about(props) {
 //     props: { allItems },
 //   };
 // }
-
