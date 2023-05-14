@@ -3,7 +3,7 @@ import Link from "next/link";
 import Typewriter from "typewriter-effect";
 export default function landing() {
   return (
-    <div >
+    <div>
       <div className="md:mt-[160px] mt-[1000px] md:ml-0 ml-[240px]">
         <h3 className="font-bold font-poppins md:mx-12 mx-[250px] w-[600px] md:text-sm text-2xl">
           Welcome to my personal portfolio.
@@ -35,16 +35,18 @@ export default function landing() {
           </p>
         </div>
         <div className="btn">
-          <button className="md:mx-12 bg-[#B0F2B2] md:w-[123px] md:h-[42px] font-revalia md:text-[17px] rounded-md h-[90px] w-[300px] text-[30px] mx-[300px] mt-[150px] md:mt-0 text-center">
-            Resume!
-          </button>
-          <Link href="/projects">
+          <a href="resume.pdf" download="resume.pdf">
+            <button className="md:mx-12 bg-[#B0F2B2] md:w-[123px] md:h-[42px] font-revalia md:text-[17px] rounded-md h-[90px] w-[300px] text-[30px] mx-[300px] mt-[150px] md:mt-0 text-center">
+              Resume!
+            </button>
+          </a>
+          <a href="/projects">
             <button className="glow-on-hover md:ml-4 font-revalia font-normal md:text-[17px] bg-[#F5F5F5] md:w-[217px] md:h-[42px] mx-[247px] mt-[100px] w-[400px] h-[100px] md:mt-0 text-[30px] text-center">
               See my Projects
             </button>
-          </Link>
+          </a>
         </div>
       </div>
-      </div>
+    </div>
   );
 }

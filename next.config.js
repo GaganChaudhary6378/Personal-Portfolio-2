@@ -2,17 +2,21 @@
 
 const nextConfig = {
   reactStrictMode: true,
-}
+};
 
 module.exports = {
-  webpack: (config) => {
-    config.resolve.fallback = {
+  webpack: (config, options) => {
+    (config.resolve.fallback = {
       fs: false,
       net: false,
       dns: false,
       child_process: false,
       tls: false,
-    };
+    }),
+      config.module.rules.push({
+        test: /\.pdf$/i,
+        type: "asset/source",
+      });
 
     return config;
   },

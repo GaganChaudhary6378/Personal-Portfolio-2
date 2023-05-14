@@ -1,4 +1,4 @@
 {
   "title": "E-Commerce Website",
-  "description": "This is a online shopping website in which we are allowing user to choose the variety of products and check if the product is deliveralble to their location or not. If it is deliverable then we will move to checkout page and do the payment."
+  "description": "I have developed a dynamic e-commerce website using Next.js for the frontend and Tailwind CSS for styling. The backend is built with Node.js and utilizes MongoDB for data storage. The website is deployed on Vercel, ensuring reliable and scalable hosting. The platform offers a wide range of products, including t-shirts, hoodies, and mugs. Users can easily navigate through different product pages, add items to their cart, and proceed to the checkout page. To enable secure transactions, I integrated Stripe for payment processing, allowing users to conveniently enter their card details and place orders. This project demonstrates my proficiency in building full-stack applications and integrating third-party services to enhance user experience and ensure data security."
 }

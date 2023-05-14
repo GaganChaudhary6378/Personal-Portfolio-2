@@ -45,6 +45,7 @@ export default function about(props) {
   // To remove the hydration effect
   const modal1=useDisclosure();
   const modal2=useDisclosure();
+  
 
 
   useEffect(() => {
@@ -111,21 +112,27 @@ export default function about(props) {
               </span>
             </button>
           </div>
-          <div>
-            <Modal onClose={modal1.onClose} isOpen={modal1.isOpen} isCentered>
+          <div >
+            <Modal className="modal" onClose={modal1.onClose} isOpen={modal1.isOpen} isCentered  blockScrollOnMount={false} >
               <ModalOverlay />
               <ModalContent
+                css={{
+                  '&::-webkit-scrollbar':{
+                    display:"none"
+                  }
+                }}
                 w="40%"
                 ml="25%"
                 mt="10%"
                 h="550px"
                 bg="gray"
                 borderRadius="8px"
+                overflowY="scroll"
               >
-                <ModalCloseButton ml="570px" mt="2%" />
-                <ModalHeader>{props.allItems[0].title}</ModalHeader>
+                <ModalCloseButton ml="580px" mt="1%" position="fixed"/>
+                <ModalHeader ml="2%" mt="2%">{props.allItems[0].title}</ModalHeader>
 
-                <ModalBody>
+                <ModalBody ml="2%" mr="2%" mt="50%">
                  
                   <p>Here there will be a image startup.</p>
                   <h2>Description</h2>
