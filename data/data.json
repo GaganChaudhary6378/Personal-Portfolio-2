@@ -1,4 +1,9 @@
-{
+[{
   "title": "E-Commerce Website",
   "description": "I have developed a dynamic e-commerce website using Next.js for the frontend and Tailwind CSS for styling. The backend is built with Node.js and utilizes MongoDB for data storage. The website is deployed on Vercel, ensuring reliable and scalable hosting. The platform offers a wide range of products, including t-shirts, hoodies, and mugs. Users can easily navigate through different product pages, add items to their cart, and proceed to the checkout page. To enable secure transactions, I integrated Stripe for payment processing, allowing users to conveniently enter their card details and place orders. This project demonstrates my proficiency in building full-stack applications and integrating third-party services to enhance user experience and ensure data security."
+},
+{
+  "title":"Quizee",
+  "description":"Quizee, powered by React JS, is an immersive quiz app that engages users with its captivating interface. With a click on Start Quiz, participants embark on a knowledge-filled journey, encountering thoughtfully curated questions from an API source. Quizee's intuitive design ensures a seamless experience, allowing users to focus on answering questions and challenging their intellect.Designed for both enjoyment and education, Quizee's multiple-choice format adds excitement as users navigate through each question. The app provides instant feedback, helping participants learn and grow from their responses. At the end of the quiz, a comprehensive score reflects their performance, showcasing their dedication and intellectual abilities. As a final touch, Quizee celebrates participants' achievements by showering them with virtual confetti, a delightful display of appreciation. With its deployment on Vercel, Quizee ensures global accessibility, inviting knowledge seekers from around the world to partake in this captivating quiz app and foster their love for learning."
 }
+]

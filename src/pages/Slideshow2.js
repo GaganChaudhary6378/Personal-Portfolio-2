@@ -3,32 +3,21 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
-const Slideshow = () => {
+const Slideshow2 = () => {
   const images = [
     {
-      original: 'ecom1.png',
-      thumbnail: 'ecom1.png',
+      original: 'quiz1.png',
+      thumbnail: 'quiz1.png',
     },
     {
-      original: 'ecom2.png',
-      thumbnail: 'ecom2.png',
+      original: 'quiz2.png',
+      thumbnail: 'quiz2.png',
     },
     {
-      original: 'ecom3.png/',
-      thumbnail: 'ecom3.png/',
+      original: 'quiz3.png/',
+      thumbnail: 'quiz3.png/',
     },
-    {
-      original: 'ecom4.png/',
-      thumbnail: 'ecom4.png/',
-    },
-    {
-      original: 'ecom5.png/',
-      thumbnail: 'ecom5.png/',
-    },
-    {
-      original: 'ecom6.png/',
-      thumbnail: 'ecom6.png/',
-    },
+    
   ];
 
   // const zoomInProperties = {
@@ -51,10 +40,10 @@ const Slideshow = () => {
   //   ),
   // };
   return (
-    <div className="w-[550px] h-[600px]">
+    <div className="w-[580px] h-[400px]">
       <ImageGallery items={images} infinite='true'/>
     </div>
   );
 };
 
-export default Slideshow;
+export default Slideshow2;
