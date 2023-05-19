@@ -359,45 +359,81 @@ export default function about(props) {
               </span>
             </button>
             <div>
-              <Modal
-                className="modal"
-                onClose={modal3.onClose}
-                isOpen={modal3.isOpen}
-                isCentered
-                blockScrollOnMount={false}
+            <Modal
+              className="modal"
+              onClose={modal1.onClose}
+              isOpen={modal1.isOpen}
+              isCentered
+              blockScrollOnMount={false}
+            >
+              <ModalOverlay />
+              <ModalContent
+                css={{
+                  "&::-webkit-scrollbar": {
+                    display: "none",
+                  },
+                }}
+                w="40%"
+                ml="30%"
+                mt="6%"
+                h="650px"
+                backgroundImage="url('prb.jpg')"
+                backgroundSize="1000px"
+                backgroundRepeat="no-repeat"
+                borderRadius="8px"
+                overflowY="scroll"
               >
-                <ModalOverlay />
-                <ModalContent
-                  css={{
-                    "&::-webkit-scrollbar": {
-                      display: "none",
-                    },
-                  }}
-                  w="40%"
-                  ml="25%"
-                  mt="10%"
-                  h="550px"
-                  bg="gray"
-                  borderRadius="8px"
-                  overflowY="scroll"
+                <ModalCloseButton
+                  ml="580px"
+                  mt="1%"
+                  position="fixed"
+                  zIndex="6"
+                  onClick={handleClick}
+                />
+                <ModalHeader
+                  ml="14.3%"
+                  mt="0.7%"
+                  fontWeight="bold"
+                  position="fixed"
+                  zIndex="6"
+                  fontFamily="revalia"
                 >
-                  <ModalCloseButton ml="580px" mt="1%" position="fixed" />
-                  <ModalHeader
-                    ml="14.3%"
-                    mt="0.7%"
-                    fontWeight="bold"
-                    position="fixed"
-                  >
-                    {props.localData.title}
-                  </ModalHeader>
-
-                  <ModalBody ml="2%" mr="2%" mt="50%" mb="2%">
-                    <p>Here there will be a image startup.</p>
-                    <h2>Description</h2>
-                    <p>{props.localData.description}</p>
-                  </ModalBody>
-                </ModalContent>
-              </Modal>
+                  {props.localData[0].title}
+                </ModalHeader>
+                <ModalBody ml="2%" mr="2%" mb="2%">
+                  <div className="mt-[10%] flex justify-center flex-row">
+                    <Slideshow />
+                  </div>
+                  <h2 className="font-bold font-revalia mb-3">Description</h2>
+                  <p className="leading-7 font-poppins w-[98%]">
+                    {props.localData[0].description}
+                  </p>
+                </ModalBody>
+                <ModalFooter
+                  backgroundColor="ivory"
+                  paddingBottom="15px"
+                  paddingTop="10px"
+                >
+                  <div className="mr-[38%] flex flex-row justify-center text-center text-3xl gap-9">
+                    <Link href="https://github.com/GaganChaudhary6378/E-commerce-Website">
+                      <AiFillGithub className="hover:text-yellow-900 hover:cursor-pointer" />
+                    </Link>
+                    <Link
+                      href="https://twitter.com/GaganCh88472243?t=zv6kxbke1RgMP8Z4ebXEwQ&s=08"
+                      target="_blank"
+                    >
+                      <AiOutlineTwitter className="hover:text-blue-900 hover:cursor-pointer" />
+                    </Link>
+                    <Link
+                      href="https://www.linkedin.com/in/gagan-chaudhary-443174216/"
+                      target="_blank"
+                    >
+                      <AiFillLinkedin className="hover:text-blue-900 hover:cursor-pointer" />
+                    </Link>
+                  </div>
+                </ModalFooter>
+              </ModalContent>
+            </Modal>
             </div>
           </section>
 
