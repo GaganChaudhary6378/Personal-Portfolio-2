@@ -361,8 +361,8 @@ export default function about(props) {
             <div>
             <Modal
               className="modal"
-              onClose={modal1.onClose}
-              isOpen={modal1.isOpen}
+              onClose={modal3.onClose}
+              isOpen={modal3.isOpen}
               isCentered
               blockScrollOnMount={false}
             >
