@@ -300,7 +300,7 @@ export default function about(props) {
                   </p>
                 </ModalBody>
                 <ModalFooter
-                  backgroundColor="ivory"
+                  backgroundColor="gray"
                   paddingBottom="15px"
                   paddingTop="10px"
                 >
