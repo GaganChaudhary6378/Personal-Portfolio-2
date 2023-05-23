@@ -455,12 +455,87 @@ export default function about(props) {
               <TbBrandNextjs />
             </div>
             <button className="md:ml-[80%] md:mt-2 mt-6 font-bold font-poppins md:text-base text-3xl ml-[85%]">
-              <span className="flex flex-row">
+              <span className="flex flex-row" onClick={modal4.onOpen}>
                 {" "}
                 See Details
                 <FiChevronsDown className="mt-1" />
               </span>
             </button>
+            <Modal
+              className="modal"
+              onClose={modal4.onClose}
+              isOpen={modal4.isOpen}
+              isCentered
+              blockScrollOnMount={false}
+            >
+              <ModalOverlay />
+              <ModalContent
+                css={{
+                  "&::-webkit-scrollbar": {
+                    display: "none",
+                  },
+                }}
+                w="40%"
+                ml="30%"
+                mt="6%"
+                h="650px"
+                backgroundImage="url('prb.jpg')"
+                backgroundSize="1000px"
+                backgroundRepeat="no-repeat"
+                borderRadius="8px"
+                overflowY="scroll"
+              >
+                <ModalCloseButton
+                  ml="580px"
+                  mt="1%"
+                  position="fixed"
+                  zIndex="6"
+                  onClick={handleClick}
+                />
+                <ModalHeader
+                  ml="14.3%"
+                  mt="0.7%"
+                  fontWeight="bold"
+                  position="fixed"
+                  zIndex="6"
+                  fontFamily="revalia"
+                >
+                  {props.localData[0].title}
+                </ModalHeader>
+                <ModalBody ml="2%" mr="2%" mb="2%">
+                  <div className="mt-[10%] flex justify-center flex-row">
+                    <Slideshow />
+                  </div>
+                  <h2 className="font-bold font-revalia mb-3">Description</h2>
+                  <p className="leading-7 font-poppins w-[98%]">
+                    {props.localData[0].description}
+                  </p>
+                </ModalBody>
+                <ModalFooter
+                  backgroundColor="ivory"
+                  paddingBottom="15px"
+                  paddingTop="10px"
+                >
+                  <div className="mr-[38%] flex flex-row justify-center text-center text-3xl gap-9">
+                    <Link href="https://github.com/GaganChaudhary6378/E-commerce-Website">
+                      <AiFillGithub className="hover:text-yellow-900 hover:cursor-pointer" />
+                    </Link>
+                    <Link
+                      href="https://twitter.com/GaganCh88472243?t=zv6kxbke1RgMP8Z4ebXEwQ&s=08"
+                      target="_blank"
+                    >
+                      <AiOutlineTwitter className="hover:text-blue-900 hover:cursor-pointer" />
+                    </Link>
+                    <Link
+                      href="https://www.linkedin.com/in/gagan-chaudhary-443174216/"
+                      target="_blank"
+                    >
+                      <AiFillLinkedin className="hover:text-blue-900 hover:cursor-pointer" />
+                    </Link>
+                  </div>
+                </ModalFooter>
+              </ModalContent>
+            </Modal>
           </section>
 
           {/* 3rd card */}
