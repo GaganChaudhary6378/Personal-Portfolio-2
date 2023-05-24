@@ -31,7 +31,7 @@ export default function landing() {
           <p className="font-revalia md:w-[800px] md:pt-6 md:mx-12 w-[1100px] ml-[-110px] text-[40px] md:text-base leading-[5rem] md:leading-6 mt-6 md:mt-0">
             Lorem ipsum dolor sit amet consectetur. Arcu est vitae ullamcorper
             in dolor ut turpis vitae iaculis. Egestas tempor dictum nam lorem
-            vulputate etiam iaculis volutpat.
+            vulputate etiam iaculis volutpat vfjdfe.
           </p>
         </div>
         <div className="btn">
