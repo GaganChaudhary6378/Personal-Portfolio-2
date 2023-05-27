@@ -6,7 +6,7 @@ export default function landing() {
     <div>
       <div className="md:mt-[160px] mt-[1000px] md:ml-0 ml-[240px]">
         <h3 className="font-bold font-poppins md:mx-12 mx-[250px] w-[600px] md:text-sm text-2xl">
-          Welcome to my project's portfolio.
+          Welcome to my portfolio.
         </h3>
         <div className="mt-5 font-poppins font-bold md:text-[75px] text-[120px] leading-[100px] md:mx-12 ">
           <p className="text-[#245D27] mx-[50px] w-[850px] md:mx-0">
