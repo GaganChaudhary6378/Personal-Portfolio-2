@@ -32,7 +32,7 @@ export default function landing() {
             I am a passionate web developer and an intermediate-level coder with
             strong experience in Data Structures and Algorithms. Strong
             creative, leadership, and problem-solving skills, committed to
-            utilizing my skills to further the mission of the company.
+            utilizing my skills to further mission of the company.
           </p>
         </div>
         <div className="btn">
