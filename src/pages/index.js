@@ -29,7 +29,7 @@ export default function landing() {
         </div>
         <div>
           <p className="font-revalia md:w-[800px] md:pt-6 md:mx-12 w-[1100px] ml-[-110px] text-[40px] md:text-base leading-[5rem] md:leading-6 mt-6 md:mt-0">
-            I am a passionate web developer and an intermediate-level coder with
+            I am a passionate full stack web developer and an intermediate-level coder with
             strong experience in Data Structures and Algorithms. Strong
             creative, leadership, and problem-solving skills, committed to
             utilizing my skills to further mission of the company.
