@@ -40,10 +40,8 @@ import Link from "next/link";
 //   Lorem,
 //   ModalFooter,
 // } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
 
 import Image from "next/image";
-import { Container } from "postcss";
 
 export async function getStaticProps() {
   const localData = await getLocalData();
@@ -70,7 +68,7 @@ export default function about(props) {
     setShow(true);
   }, []);
 
-  function handleClick(){
+  function handleClick() {
     isClicked(!clicked);
     modal1.onOpen();
   }
@@ -78,8 +76,7 @@ export default function about(props) {
   return (
     // opacity-${clicked ? 0 : 0}`}
     show && (
-      <div className={`h-[900px] opacity-${clicked ? 10: 100}`}>
-         
+      <div className={`h-[900px] opacity-${clicked ? 10 : 100}`}>
         {/* <motion.div
         className="card1 bg-red-400"
         onClick={() => setisOpen(!isOpen)}
@@ -243,7 +240,7 @@ export default function about(props) {
             </div>
             <button
               className="md:ml-[80%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl"
-              onClick={modal2.onOpen}
+              onClick={handleClick}
             >
               <span className="flex flex-row">
                 {" "}
@@ -274,6 +271,7 @@ export default function about(props) {
                   mt="1%"
                   position="fixed"
                   zIndex="6"
+                  onClick={handleClick}
                 />
                 <ModalHeader
                   display="flex"
@@ -354,86 +352,86 @@ export default function about(props) {
             >
               <span className="flex flex-row">
                 {" "}
-                Expand
+                See Details
                 <FiChevronsDown className="mt-1" />
               </span>
             </button>
             <div>
-            <Modal
-              className="modal"
-              onClose={modal3.onClose}
-              isOpen={modal3.isOpen}
-              isCentered
-              blockScrollOnMount={false}
-            >
-              <ModalOverlay />
-              <ModalContent
-                css={{
-                  "&::-webkit-scrollbar": {
-                    display: "none",
-                  },
-                }}
-                w="40%"
-                ml="30%"
-                mt="6%"
-                h="650px"
-                backgroundImage="url('prb.jpg')"
-                backgroundSize="1000px"
-                backgroundRepeat="no-repeat"
-                borderRadius="8px"
-                overflowY="scroll"
+              <Modal
+                className="modal"
+                onClose={modal3.onClose}
+                isOpen={modal3.isOpen}
+                isCentered
+                blockScrollOnMount={false}
               >
-                <ModalCloseButton
-                  ml="580px"
-                  mt="1%"
-                  position="fixed"
-                  zIndex="6"
-                  onClick={handleClick}
-                />
-                <ModalHeader
-                  ml="14.3%"
-                  mt="0.7%"
-                  fontWeight="bold"
-                  position="fixed"
-                  zIndex="6"
-                  fontFamily="revalia"
+                <ModalOverlay />
+                <ModalContent
+                  css={{
+                    "&::-webkit-scrollbar": {
+                      display: "none",
+                    },
+                  }}
+                  w="40%"
+                  ml="30%"
+                  mt="6%"
+                  h="650px"
+                  backgroundImage="url('prb.jpg')"
+                  backgroundSize="1000px"
+                  backgroundRepeat="no-repeat"
+                  borderRadius="8px"
+                  overflowY="scroll"
                 >
-                  {props.localData[0].title}
-                </ModalHeader>
-                <ModalBody ml="2%" mr="2%" mb="2%">
-                  <div className="mt-[10%] flex justify-center flex-row">
-                    <Slideshow />
-                  </div>
-                  <h2 className="font-bold font-revalia mb-3">Description</h2>
-                  <p className="leading-7 font-poppins w-[98%]">
-                    {props.localData[0].description}
-                  </p>
-                </ModalBody>
-                <ModalFooter
-                  backgroundColor="ivory"
-                  paddingBottom="15px"
-                  paddingTop="10px"
-                >
-                  <div className="mr-[38%] flex flex-row justify-center text-center text-3xl gap-9">
-                    <Link href="https://github.com/GaganChaudhary6378/E-commerce-Website">
-                      <AiFillGithub className="hover:text-yellow-900 hover:cursor-pointer" />
-                    </Link>
-                    <Link
-                      href="https://twitter.com/GaganCh88472243?t=zv6kxbke1RgMP8Z4ebXEwQ&s=08"
-                      target="_blank"
-                    >
-                      <AiOutlineTwitter className="hover:text-blue-900 hover:cursor-pointer" />
-                    </Link>
-                    <Link
-                      href="https://www.linkedin.com/in/gagan-chaudhary-443174216/"
-                      target="_blank"
-                    >
-                      <AiFillLinkedin className="hover:text-blue-900 hover:cursor-pointer" />
-                    </Link>
-                  </div>
-                </ModalFooter>
-              </ModalContent>
-            </Modal>
+                  <ModalCloseButton
+                    ml="580px"
+                    mt="1%"
+                    position="fixed"
+                    zIndex="6"
+                    onClick={handleClick}
+                  />
+                  <ModalHeader
+                    ml="14.3%"
+                    mt="0.7%"
+                    fontWeight="bold"
+                    position="fixed"
+                    zIndex="6"
+                    fontFamily="revalia"
+                  >
+                    {props.localData[0].title}
+                  </ModalHeader>
+                  <ModalBody ml="2%" mr="2%" mb="2%">
+                    <div className="mt-[10%] flex justify-center flex-row">
+                      <Slideshow />
+                    </div>
+                    <h2 className="font-bold font-revalia mb-3">Description</h2>
+                    <p className="leading-7 font-poppins w-[98%]">
+                      {props.localData[0].description}
+                    </p>
+                  </ModalBody>
+                  <ModalFooter
+                    backgroundColor="ivory"
+                    paddingBottom="15px"
+                    paddingTop="10px"
+                  >
+                    <div className="mr-[38%] flex flex-row justify-center text-center text-3xl gap-9">
+                      <Link href="https://github.com/GaganChaudhary6378/E-commerce-Website">
+                        <AiFillGithub className="hover:text-yellow-900 hover:cursor-pointer" />
+                      </Link>
+                      <Link
+                        href="https://twitter.com/GaganCh88472243?t=zv6kxbke1RgMP8Z4ebXEwQ&s=08"
+                        target="_blank"
+                      >
+                        <AiOutlineTwitter className="hover:text-blue-900 hover:cursor-pointer" />
+                      </Link>
+                      <Link
+                        href="https://www.linkedin.com/in/gagan-chaudhary-443174216/"
+                        target="_blank"
+                      >
+                        <AiFillLinkedin className="hover:text-blue-900 hover:cursor-pointer" />
+                      </Link>
+                    </div>
+                  </ModalFooter>
+                </ModalContent>
+              </Modal>
             </div>
           </section>
 
@@ -688,8 +686,6 @@ export default function about(props) {
                 <FiChevronsDown className="mt-1" />
               </span>
             </button>
-            
-            
           </section>
 
           <section className="bx1 ml-[45px] mt-[50px] md:w-[550px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
