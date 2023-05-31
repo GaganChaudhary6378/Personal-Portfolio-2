@@ -58,8 +58,6 @@ export default function about(props) {
   const modal2 = useDisclosure();
   const modal3 = useDisclosure();
   const modal4 = useDisclosure();
-  const modal5 = useDisclosure();
-  const modal6 = useDisclosure();
 
   const [clicked, isClicked] = useState(false);
   useEffect(() => {
