@@ -22,7 +22,7 @@ import {
   ModalCloseButton,
   ModalBody,
 } from "@chakra-ui/react";
-import { getLocalData } from "./localData";
+import { getLocalData } from "../../components/localData";
 import Slideshow from "./Slideshow";
 import Slideshow2 from "./Slideshow2";
 import Link from "next/link";
