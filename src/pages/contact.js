@@ -32,7 +32,7 @@ export default function about() {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
-      },
+      },  
       body: JSON.stringify(data),
     });
     let response = await res.json();
@@ -66,20 +66,20 @@ export default function about() {
         pauseOnHover
         theme="light"
       />
-      <div className="container md:my-14 md:px-6 my-24 px-[160px]">
+      <div className="container md:my-14 md:px-6 my-24 px-[40px]">
         <section className="mb-32 text-gray-800 text-center">
           <div className="px-6 py-12 md:px-12">
-            <div className="container mx-auto xl:px-32">
+            <div className="container mx-auto xl:px-32 md:w-auto w-[1300px]">
               <div className="grid lg:grid-cols-2 items-center">
                 <div className="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
-                  <div className="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14">
-                    <div className="mb-7 flex flex-row gap-16 ml-[100px] text-3xl"> 
+                  <div className="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14 md:h-[550px] h-[1000px]">
+                    <div className="md:mb-7 flex flex-row md:gap-16 md:ml-[100px] ml-[10px] md:text-3xl justify-center gap-[100px] text-5xl"> 
                     <Link href="https://www.linkedin.com/in/gagan-chaudhary-443174216/"><TfiLinkedin className=" hover:cursor-pointer hover:text-[#245D27]"/></Link>
                     <Link href="https://twitter.com/GaganCh88472243?t=zv6kxbke1RgMP8Z4ebXEwQ&s=08"><BsTwitter className="hover:cursor-pointer hover:text-[#245D27]"/></Link>
                     <Link href="https://github.com/GaganChaudhary6378"><BsGithub className=" hover:cursor-pointer hover:text-[#245D27]"/></Link>
                     <Link href="mailto:singhgaganbtp@gmail.com"><AiFillMail className="hover:cursor-pointer hover:text-[#245D27]"/></Link>
                     </div>
-                    <h2 className="md:text-3xl font-bold mb-12 font-revalia text-[#245D27] text-4xl">
+                    <h2 className="md:mt-0 md:text-3xl mt-[90px] font-bold mb-12 font-revalia text-[#245D27] text-5xl">
                       Contact Me
                     </h2>
                     <form className="md:w-auto w-[500px] h-[400px] md:h-auto mb-0" onSubmit={handleSubmit} action="#" method="POST">

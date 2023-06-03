@@ -27,7 +27,7 @@ export default function landing() {
           {/* </p> */}
         </div>
         <div>
-          <p className="font-revalia md:w-[800px] md:pt-6 md:mx-12 w-[1100px] ml-[-110px] text-[40px] md:text-base leading-[5rem] md:leading-6 mt-6 md:mt-0">
+          <p className="font-revalia md:w-[800px] md:pt-6 md:mx-12 w-[1100px] ml-[-110px] text-[40px] md:text-base leading-[5rem] md:leading-6 mt-6 md:mt-0 md:-tracking-normal tracking-[1.9px]">
             I am a passionate full stack web developer and an intermediate-level coder with
             strong experience in Data Structures and Algorithms. Strong
             creative, leadership, and problem-solving skills, committed to

@@ -8,7 +8,7 @@ import { FiChevronsDown } from "react-icons/fi";
 import { SiMongodb } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { IoLogoVercel } from "react-icons/io5";
-import { AiOutlineTwitter , AiFillLinkedin,AiFillGithub } from "react-icons/ai";
+import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaStripe } from "react-icons/fa";
 import { SiCss3 } from "react-icons/si";
 import { Modal, ModalFooter } from "@chakra-ui/react";
@@ -64,9 +64,10 @@ export default function about(props) {
     setShow(true);
   }, []);
 
-  function handleClick() {
+  function handleClick(e) {
     isClicked(!clicked);
-    modal1.onOpen();
+    let value=e.target.id;
+    modal1.onOpen()
   }
   const width = windowSize - 20;
   return (
@@ -123,7 +124,7 @@ export default function about(props) {
               className="ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl"
               onClick={handleClick}
             >
-              <span className="flex flex-row">
+              <span className="flex flex-row" id="1">
                 {" "}
                 See Details
                 <FiChevronsDown className="mt-1" />
