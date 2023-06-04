@@ -58,17 +58,13 @@ export default function about(props) {
   const modal2 = useDisclosure();
   const modal3 = useDisclosure();
   const modal4 = useDisclosure();
+  const modal5 = useDisclosure();
 
   const [clicked, isClicked] = useState(false);
   useEffect(() => {
     setShow(true);
   }, []);
 
-  function handleClick(e) {
-    isClicked(!clicked);
-    let value=e.target.id;
-    modal1.onOpen()
-  }
   const width = windowSize - 20;
   return (
     // opacity-${clicked ? 0 : 0}`}
@@ -122,7 +118,10 @@ export default function about(props) {
             </div>
             <button
               className="ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl"
-              onClick={handleClick}
+              onClick={() => {
+                isClicked(!clicked);
+                modal1.onOpen();
+              }}
             >
               <span className="flex flex-row" id="1">
                 {" "}
@@ -161,7 +160,6 @@ export default function about(props) {
                   mt="1%"
                   position="fixed"
                   zIndex="6"
-                  onClick={handleClick}
                 />
                 <ModalHeader
                   ml="14.3%"
@@ -236,8 +234,10 @@ export default function about(props) {
               <IoLogoVercel className="ml-5" />
             </div>
             <button
-              className="md:ml-[80%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl"
-              onClick={handleClick}
+              className="md:ml-[80%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl" onClick={() => {
+                isClicked(!clicked);
+                modal2.onOpen();
+              }}
             >
               <span className="flex flex-row">
                 {" "}
@@ -268,7 +268,6 @@ export default function about(props) {
                   mt="1%"
                   position="fixed"
                   zIndex="6"
-                  onClick={handleClick}
                 />
                 <ModalHeader
                   display="flex"
@@ -345,7 +344,10 @@ export default function about(props) {
             </div>
             <button
               className="md:ml-[70%] ml-[85%] md:mt-9 font-bold font-poppins md:text-base text-3xl mt-8"
-              onClick={modal3.onOpen}
+              onClick={() => {
+                isClicked(!clicked);
+                modal3.onOpen();
+              }}
             >
               <span className="flex flex-row">
                 {" "}
@@ -383,7 +385,6 @@ export default function about(props) {
                     mt="1%"
                     position="fixed"
                     zIndex="6"
-                    onClick={handleClick}
                   />
                   <ModalHeader
                     ml="14.3%"
@@ -450,7 +451,10 @@ export default function about(props) {
               <TbBrandNextjs />
             </div>
             <button className="md:ml-[80%] md:mt-2 mt-6 font-bold font-poppins md:text-base text-3xl ml-[85%]">
-              <span className="flex flex-row" onClick={modal4.onOpen}>
+              <span className="flex flex-row" onClick={() => {
+                isClicked(!clicked);
+                modal4.onOpen();
+              }}>
                 {" "}
                 See Details
                 <FiChevronsDown className="mt-1" />
@@ -485,7 +489,6 @@ export default function about(props) {
                   mt="1%"
                   position="fixed"
                   zIndex="6"
-                  onClick={handleClick}
                 />
                 <ModalHeader
                   ml="14.3%"
@@ -549,7 +552,10 @@ export default function about(props) {
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="md:ml-[67%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl">
+            <button className="md:ml-[67%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl" onClick={() => {
+                isClicked(!clicked);
+                modal5.onOpen();
+              }}>
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -558,8 +564,8 @@ export default function about(props) {
             </button>
             <Modal
               className="modal"
-              onClose={modal4.onClose}
-              isOpen={modal4.isOpen}
+              onClose={modal5.onClose}
+              isOpen={modal5.isOpen}
               isCentered
               blockScrollOnMount={false}
             >
@@ -585,7 +591,6 @@ export default function about(props) {
                   mt="1%"
                   position="fixed"
                   zIndex="6"
-                  onClick={handleClick}
                 />
                 <ModalHeader
                   ml="14.3%"
