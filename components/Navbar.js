@@ -25,7 +25,7 @@ export default function Navbar() {
   
   return (
     windowWidth > 440 ? (
-    (show && <div className="flex flex-row mx-6 font-poppins w-[1495px]">
+    (show && <div className="flex flex-row mx-6 font-poppins w-[1496px]">
       <div className="logo mr-auto md:mx-5">
         <Link href={"/"}>
           <div className="md:w-80 md:text-3xl font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px] ">
