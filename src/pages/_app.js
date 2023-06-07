@@ -15,11 +15,9 @@ export default function App({ Component, pageProps }) {
     })
   })
   return (
-    <>
-    
-      
+    <div  className="landing">
       <Navbar />
       {loading ? <div className="md:ml-[46%] md:mt-[20%] ml-[630px] mt-[850px] "><GuardSpinner size={100} color="#686769" loading={loading} /></div> : <Component {...pageProps} />}
-    </>
+    </div>
   );
 }

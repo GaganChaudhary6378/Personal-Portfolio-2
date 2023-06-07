@@ -52,7 +52,7 @@
 }
 
 .btn {
-  background-image: url("/Frame 1.png");
+  /* background-image: url("/Frame 1.png"); */
   background-size: 700px;
   background-repeat: no-repeat;
   height: 224px;
@@ -134,7 +134,7 @@
   }
 }
 .skills {
-  background-image: url("/grid.jpg");
+  /* background-image: url("/grid.jpg"); */
   background-repeat: no-repeat;
   background-size: 2000px;
   background-position-y: 450px;
@@ -159,4 +159,13 @@
   .modal {
     width: 700px;
   }
+}
+
+.landing{
+  background-image: url("/Rectangle.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  height:fit-content;
+  /* height: 796px; */
+  margin-top: 0px !important;
 }
