@@ -11,6 +11,7 @@ import { IoLogoVercel } from "react-icons/io5";
 import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaStripe } from "react-icons/fa";
 import { SiCss3 } from "react-icons/si";
+import { motion, useScroll } from "framer-motion";
 import { Modal, ModalFooter } from "@chakra-ui/react";
 import {
   useDisclosure,
@@ -60,6 +61,8 @@ export default function about(props) {
   const modal4 = useDisclosure();
   const modal5 = useDisclosure();
 
+  const { scrollYProgress } = useScroll();
+
   const [clicked, isClicked] = useState(false);
   useEffect(() => {
     setShow(true);
@@ -67,8 +70,10 @@ export default function about(props) {
 
   const width = windowSize - 20;
   return (
+    
     // opacity-${clicked ? 0 : 0}`}
     show && (
+      
       <div className={`h-[900px] opacity-${clicked ? 10 : 100}`}>
         {/* <motion.div
         className="card1 bg-red-400"

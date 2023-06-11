@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { FiMenu } from "react-icons/fi";
 import { useWindowWidth } from "@react-hook/window-size";
-
+import { motion } from "framer-motion";
 export default function Navbar() {
   
   const [show, setShow] = useState(false);
@@ -79,6 +79,7 @@ export default function Navbar() {
       >
         <ul className="flex flex-col justify-center text-center mt-[30%] gap-[150px] font-revalia font-semibold text-white">
         <Link href={"/"}>
+         
             <li className="nav-line nav-line-ani text-center text-7xl" onClick={openMenu}>
               About Me
             </li>
