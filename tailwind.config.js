@@ -18,7 +18,8 @@ module.exports = {
     fontFamily:{
       poppins:['Poppins'],
       revalia:['Revalia'],
-      rancho:['Rancho']
+      rancho:['Rancho'],
+      zeyada:['Zeyada']
     }
   },
   plugins: [],

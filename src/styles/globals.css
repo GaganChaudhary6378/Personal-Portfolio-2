@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Revalia&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -55,7 +56,7 @@
   /* background-image: url("/Frame 1.png"); */
   background-size: 700px;
   background-repeat: no-repeat;
-  height: 224px;
+  height: 233px;
   padding-top: 70px;
 }
 @media only screen and (max-width: 600px) {
@@ -140,20 +141,11 @@
   background-position-y: 450px;
 }
 
-.bx1 {
-  background-image: url("/prb.jpg");
-  background-size: 900px;
-  width: 500px;
-  background-repeat: no-repeat;
-}
-
 @media only screen and (max-width: 600px) {
   .bx1 {
     background-size: 1330px;
   }
 }
-
-
 
 @media only screen and (max-width: 600px) {
   .modal {
@@ -161,11 +153,21 @@
   }
 }
 
-.landing{
+.landing {
   background-image: url("/Rectangle.jpg");
   background-repeat: no-repeat;
   background-size: 1600px;
-  height:fit-content;
+  height: fit-content;
   /* height: 796px; */
   margin-top: 0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing {
+    background-image: none;
+  }
+}
+
+.drop{
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
 }

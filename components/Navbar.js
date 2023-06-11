@@ -4,7 +4,9 @@ import { useState } from "react";
 import { useRef } from "react";
 import { FiMenu } from "react-icons/fi";
 import { useWindowWidth } from "@react-hook/window-size";
+
 export default function Navbar() {
+  
   const [show, setShow] = useState(false);
   // To remove the hydration effect
   useEffect(() => {
@@ -28,7 +30,7 @@ export default function Navbar() {
     (show && <div className="flex flex-row mx-6 font-poppins w-[1496px]">
       <div className="logo mr-auto md:mx-5">
         <Link href={"/"}>
-          <div className="md:w-80 md:text-3xl font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px] ">
+          <div className="md:w-80 md:text-3xl font-bold line-height-[39px] leading-6 font-zeyada mt-6 text-[#245D27] text-6xl w-[563px] ">
             Gagan Chaudhary
           </div>
         </Link>
@@ -62,38 +64,42 @@ export default function Navbar() {
     <div className="font-poppins ml-[430px] w-[1000px]">
       <div className="flex flex-row ">
       <Link href={"/"}>
-        <div className="font-bold line-height-[39px] leading-6 font-poppins mt-6 text-[#245D27] text-6xl w-[563px]">
+        <div className="font-bold line-height-[39px] leading-6 font-zeyada ml-[20px] mt-11 text-[#245D27] text-8xl w-[600px]">
           Gagan Chaudhary
         </div>
       </Link>
-      <div className="mt-6 ml-[880px] text-4xl absolute">
+      <div className="mt-9 ml-[880px] text-4xl absolute">
         <p><FiMenu onClick={openMenu} /></p>
       </div>
       </div>
 
       <div
         ref={ref}
-        className="w-60 h-[56vh] mr-[86px] fixed mt-[70px] top-0 right-0 bg-[#eaffeb] px-6 py-10 z-10 hidden rounded-xl"
+        className="w-full h-full fixed mt-[70px] top-12 right-0 drop z-10 hidden rounded-xl"
       >
-        <ul>
+        <ul className="flex flex-col justify-center text-center mt-[30%] gap-[150px] font-revalia font-semibold text-white">
+        <Link href={"/"}>
+            <li className="nav-line nav-line-ani text-center text-7xl" onClick={openMenu}>
+              About Me
+            </li>
+          </Link>
           <Link href={"/experience"}>
-            <li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pb-5 pl-5 w-[130px]">
+            <li className="nav-line nav-line-ani text-center text-7xl" onClick={openMenu}>
               Experience
             </li>
           </Link>
           <Link href={"/projects"}>
-            <li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pl-5 pb-5 w-[95px]">
+            <li className="nav-line nav-line-ani text-center text-7xl" onClick={openMenu}>
               Projects
             </li>
           </Link>
-          <br></br>
           <Link href={"/skills"}>
-            <li className="nav-line nav-line-ani font-poppins font-bold text-center text-2xl pl-5 pb-5 w-[60px]">
+            <li className="nav-line nav-line-ani text-center text-7xl" onClick={openMenu}>
               Skills
             </li>
           </Link>
           <Link href={"/contact"}>
-            <li className="nav-line nav-line-ani font-poppins font-bold text-center pl-5 text-2xl">
+            <li className="nav-line nav-line-ani text-center text-7xl" onClick={openMenu}>
               Contact me
             </li>
           </Link>
