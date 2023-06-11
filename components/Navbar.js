@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRef } from "react";
 import { FiMenu } from "react-icons/fi";
 import { useWindowWidth } from "@react-hook/window-size";
-import { motion } from "framer-motion";
 export default function Navbar() {
   
   const [show, setShow] = useState(false);
