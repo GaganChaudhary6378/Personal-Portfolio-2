@@ -76,7 +76,7 @@ export default function Navbar() {
 
       <div
         ref={ref}
-        className="w-full h-full fixed mt-[-70px] right-0 drop z-10 hidden rounded-xl"
+        className="w-full h-full fixed mt-[-68px] right-0 drop z-10 hidden animate-fade-in-down"
       >
         {show && <div>
           <RxCross2 className="text-8xl flex text-right w-full ml-[44%] mt-6" onClick={openMenu}/>

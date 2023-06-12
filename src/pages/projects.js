@@ -61,9 +61,12 @@ export default function about(props) {
   const modal4 = useDisclosure();
   const modal5 = useDisclosure();
 
-  const { scrollYProgress } = useScroll();
 
   const [clicked, isClicked] = useState(false);
+
+  function toggle(){
+    isClicked(!clicked);
+  }
   useEffect(() => {
     setShow(true);
   }, []);
@@ -101,16 +104,19 @@ export default function about(props) {
         )} */}
         {/* </motion.div> */}
         <div className="flex md:flex-row flex-col flex-wrap">
-          <div className="bx1 ml-[45px] mt-[50px] md:w-[800px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <div className="bx1 ml-[45px] mt-[50px] md:w-[800px] w-[1328px] md:h-[280px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 E-commerce Website
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
               </p>
+              <p className="font-poppins">
+              Designed for seamless shopping, Loopcart showcases a captivating collection of trendy apparel, cozy hoodies, stylish mugs, and captivating stickers. Explore, select, and effortlessly place your order, all within our user-friendly platform.
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins  md:text-base text-4xl mt-[100px]">
+            <h2 className="md:mt-5 font-poppins  md:text-base text-4xl mt-[100px] font-semibold">
               Languages Used:
             </h2>
             <div className="md:mt-3 flex flex-row md:text-4xl text-7xl mt-[40px]">
@@ -122,7 +128,7 @@ export default function about(props) {
               <FaStripe className="ml-5 text-blue-700" />
             </div>
             <button
-              className="ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl"
+              className="ml-[85%] font-bold font-poppins md:text-base text-3xl"
               onClick={() => {
                 isClicked(!clicked);
                 modal1.onOpen();
@@ -131,7 +137,7 @@ export default function about(props) {
               <span className="flex flex-row" id="1">
                 {" "}
                 See Details
-                <FiChevronsDown className="mt-1" />
+                <FiChevronsDown className="mt-1 animate-bounce" />
               </span>
             </button>
           </div>
@@ -165,6 +171,7 @@ export default function about(props) {
                   mt="1%"
                   position="fixed"
                   zIndex="6"
+                  onClick={toggle}
                 />
                 <ModalHeader
                   ml="14.3%"
@@ -273,6 +280,7 @@ export default function about(props) {
                   mt="1%"
                   position="fixed"
                   zIndex="6"
+                  onClick={toggle}
                 />
                 <ModalHeader
                   display="flex"
