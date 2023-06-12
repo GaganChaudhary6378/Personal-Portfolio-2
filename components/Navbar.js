@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useRef } from "react";
 import { FiMenu } from "react-icons/fi";
+import { RxCross2 } from "react-icons/rx";
+
 import { useWindowWidth } from "@react-hook/window-size";
 export default function Navbar() {
   
@@ -74,8 +76,11 @@ export default function Navbar() {
 
       <div
         ref={ref}
-        className="w-full h-full fixed mt-[70px] top-12 right-0 drop z-10 hidden rounded-xl"
+        className="w-full h-full fixed mt-[-70px] right-0 drop z-10 hidden rounded-xl"
       >
+        {show && <div>
+          <RxCross2 className="text-8xl flex text-right w-full ml-[44%] mt-6" onClick={openMenu}/>
+        </div>}
         <ul className="flex flex-col justify-center text-center mt-[30%] gap-[150px] font-revalia font-semibold text-white">
         <Link href={"/"}>
          
