@@ -3,10 +3,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useWindowWidth } from "@react-hook/window-size";
 import { FaReact } from "react-icons/fa";
+import { BsGithub} from "react-icons/bs";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FiChevronsDown } from "react-icons/fi";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiVercel } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
+import { SiTailwindcss } from "react-icons/si";
 import { IoLogoVercel } from "react-icons/io5";
 import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaStripe } from "react-icons/fa";
@@ -41,6 +43,7 @@ import Link from "next/link";
 // } from "@chakra-ui/react";
 
 import Image from "next/image";
+import { RxVercelLogo } from "react-icons/rx";
 
 export async function getStaticProps() {
   const localData = await getLocalData();
@@ -117,7 +120,7 @@ export default function about(props) {
               </p>
             </div>
             <h2 className="md:mt-5 font-poppins  md:text-base text-4xl mt-[100px] font-semibold">
-              Languages Used:
+              Stack Used:
             </h2>
             <div className="md:mt-3 flex flex-row md:text-4xl text-7xl mt-[40px]">
               <TbBrandNextjs className=" " />
@@ -126,6 +129,8 @@ export default function about(props) {
               <SiMongodb className="ml-5 text-green-800" />
               <IoLogoVercel className="ml-5" />
               <FaStripe className="ml-5 text-blue-700" />
+              <BsGithub className="ml-5"/>
+              <SiTailwindcss className="ml-5 text-sky-600"/>
             </div>
             <button
               className="ml-[85%] font-bold font-poppins md:text-base text-3xl"
@@ -221,17 +226,20 @@ export default function about(props) {
 
           {/* Second card */}
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px]  md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px]  md:h-[280px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Quizzee
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
               </p>
+              <p className="font-poppins">
+              Prepare to be captivated by Quizzical, the immersive quiz app that ignites your intellect, challenges your mind, and propels you towards the pinnacle of knowledge.
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">
-              Languages Used:
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px] font-semibold">
+              Stack Used:
             </h2>
             <div className="md:mt-3 flex flex-row md:text-4xl text-7xl mt-[40px]">
               <FaReact className="ml-0 text-blue-400" />
@@ -246,7 +254,7 @@ export default function about(props) {
               <IoLogoVercel className="ml-5" />
             </div>
             <button
-              className="md:ml-[80%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl" onClick={() => {
+              className="md:ml-[80%] ml-[85%] font-bold font-poppins md:text-base text-3xl" onClick={() => {
                 isClicked(!clicked);
                 modal2.onOpen();
               }}
@@ -254,7 +262,7 @@ export default function about(props) {
               <span className="flex flex-row">
                 {" "}
                 See Details
-                <FiChevronsDown className="mt-1" />
+                <FiChevronsDown className="mt-1 animate-bounce"/>
               </span>
             </button>
           </section>
@@ -340,23 +348,29 @@ export default function about(props) {
         {/* 2nd row */}
 
         <div className="flex md:flex-row flex-col">
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[400px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[400px] w-[1328px] md:h-[300px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Tenzies Game
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
               </p>
+              <p className="font-poppins">
+              Get ready to roll the dice and test your skill in Tenzies, the fast-paced game where selecting identical dice is the ultimate challenge.
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">
-              Languages Used:
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px] font-semibold">
+              Stack Used:
             </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
-              <TbBrandNextjs />
+            <FaReact className="ml-5 text-blue-400" />
+            <BsGithub className="ml-5"/>
+            <SiCss3 className="ml-5 text-blue-700" />
+            <SiVercel className="ml-5"/>
             </div>
             <button
-              className="md:ml-[70%] ml-[85%] md:mt-9 font-bold font-poppins md:text-base text-3xl mt-8"
+              className="md:ml-[70%] ml-[85%] md:mt-5 font-bold font-poppins md:text-base text-3xl mt-8"
               onClick={() => {
                 isClicked(!clicked);
                 modal3.onOpen();
@@ -365,7 +379,7 @@ export default function about(props) {
               <span className="flex flex-row">
                 {" "}
                 See Details
-                <FiChevronsDown className="mt-1" />
+                <FiChevronsDown className="mt-1 animate-bounce"/>
               </span>
             </button>
             <div>
@@ -448,29 +462,35 @@ export default function about(props) {
 
           {/* Second card */}
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px] md:h-[300px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Meme Generator
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
               </p>
+              <p className="font-poppins">
+              Embrace the chaos of Meme-o-Matic, where the collision of random images and your creative genius results in meme magic that will have the online world in hysterics.
+              </p>
             </div>
-            <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px]">
-              Languages Used:
+            <h2 className="mt-5 font-poppins md:text-base text-4xl font-semibold">
+              Stack Used:
             </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
-              <TbBrandNextjs />
+            <FaReact className="ml-5 text-blue-400" />
+            <BsGithub className="ml-5"/>
+            <SiCss3 className="ml-5 text-blue-700" />
+            <SiVercel className="ml-5"/>
             </div>
-            <button className="md:ml-[80%] md:mt-2 mt-6 font-bold font-poppins md:text-base text-3xl ml-[85%]">
+            <button className="md:ml-[80%] md:mt-5 font-bold font-poppins md:text-base text-3xl ml-[85%]">
               <span className="flex flex-row" onClick={() => {
                 isClicked(!clicked);
                 modal4.onOpen();
               }}>
                 {" "}
                 See Details
-                <FiChevronsDown className="mt-1" />
+                <FiChevronsDown className="mt-1 animate-bounce" />
               </span>
             </button>
             <Modal
@@ -550,17 +570,20 @@ export default function about(props) {
           </section>
 
           {/* 3rd card */}
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[350px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[350px] w-[1328px] md:h-[300px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Travel Journal
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
               </p>
+              <p className="font-poppins">
+              Embark on a heartfelt journey through my Travel Chronicles, a personal journal filled with captivating photos and Google Map locations from my extraordinary adventures.
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">
-              Languages Used:
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px] font-semibold">
+              Stack Used:
             </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
@@ -572,7 +595,7 @@ export default function about(props) {
               <span className="flex flex-row">
                 {" "}
                 See Details
-                <FiChevronsDown className="mt-1" />
+                <FiChevronsDown className="mt-1 animate-bounce" />
               </span>
             </button>
             <Modal
@@ -655,7 +678,7 @@ export default function about(props) {
         <div className="flex md:flex-row flex-col w-[1400px] md:w-[1500px]">
           <section className="bx1 ml-[45px] mt-[50px] md:w-[300px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Chrome Dashboard
               </p>
               <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
@@ -672,7 +695,7 @@ export default function about(props) {
               <span className="flex flex-row">
                 {" "}
                 See Details
-                <FiChevronsDown className="mt-1" />
+                <FiChevronsDown className="mt-1 animate-bounce" />
               </span>
             </button>
           </section>
@@ -681,7 +704,7 @@ export default function about(props) {
 
           <section className="bx1 ml-[45px] mt-[50px] md:w-[500px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Game of war
               </p>
               <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
@@ -698,14 +721,14 @@ export default function about(props) {
               <span className="flex flex-row">
                 {" "}
                 See Details
-                <FiChevronsDown className="mt-1" />
+                <FiChevronsDown className="mt-1 animate-bounce" />
               </span>
             </button>
           </section>
 
           <section className="bx1 ml-[45px] mt-[50px] md:w-[550px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Weather App
               </p>
               <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
@@ -722,7 +745,7 @@ export default function about(props) {
               <span className="flex flex-row">
                 {" "}
                 See Details
-                <FiChevronsDown className="mt-1" />
+                <FiChevronsDown className="mt-1 animate-bounce" />
               </span>
             </button>
           </section>
