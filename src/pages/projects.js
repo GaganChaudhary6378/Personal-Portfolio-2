@@ -80,7 +80,7 @@ export default function about(props) {
     // opacity-${clicked ? 0 : 0}`}
     show && (
       
-      <div className={`h-[900px] opacity-${clicked ? 10 : 100}`}>
+      <div className={`h-[1100px] opacity-${clicked ? 10 : 100}`}>
         {/* <motion.div
         className="card1 bg-red-400"
         onClick={() => setisOpen(!isOpen)}
@@ -579,16 +579,19 @@ export default function about(props) {
                 Description 👇
               </p>
               <p className="font-poppins">
-              Embark on a heartfelt journey through my Travel Chronicles, a personal journal filled with captivating photos and Google Map locations from my extraordinary adventures.
+              Travel Chronicles: heartfelt journal, photos, Google Map locations of extraordinary adventures.
               </p>
             </div>
             <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px] font-semibold">
               Stack Used:
             </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
-              <TbBrandNextjs />
+            <FaReact className="ml-5 text-blue-400" />
+            <BsGithub className="ml-5"/>
+            <SiCss3 className="ml-5 text-blue-700" />
+            <SiVercel className="ml-5"/>
             </div>
-            <button className="md:ml-[67%] ml-[85%] mt-7 font-bold font-poppins md:text-base text-3xl" onClick={() => {
+            <button className="md:ml-[67%] ml-[85%] mt-5 font-bold font-poppins md:text-base text-3xl" onClick={() => {
                 isClicked(!clicked);
                 modal5.onOpen();
               }}>
@@ -676,17 +679,20 @@ export default function about(props) {
         </div>
 
         <div className="flex md:flex-row flex-col w-[1400px] md:w-[1500px]">
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[300px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[700px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
-              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
+              <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700 ">
                 Chrome Dashboard
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
               </p>
+              <p className="font-poppins">
+              Introducing the Chrome Dashboard: a user-friendly tool to track cryptocurrency values and personalize your browsing experience. Stay up to date with real-time prices, all in one place.
+              </p>
             </div>
-            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px]">
-              Languages Used:
+            <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px] font-semibold">
+              Stack Used:
             </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
@@ -707,12 +713,12 @@ export default function about(props) {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Game of war
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
               </p>
             </div>
-            <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px]">
-              Languages Used:
+            <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px] font-semibold">
+              Stack Used:
             </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
@@ -731,12 +737,12 @@ export default function about(props) {
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Weather App
               </p>
-              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl">
+              <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
               </p>
             </div>
-            <h2 className="md:mt-11 font-poppins mt-[100px] md:text-base text-4xl">
-              Languages Used:
+            <h2 className="md:mt-11 font-poppins mt-[100px] md:text-base text-4xl font-semibold">
+              Stack Used:
             </h2>
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />

@@ -53,7 +53,7 @@ export default function about() {
     
   }
   return (
-    <div>
+    <div className="contactPage">
       <ToastContainer
         position="top-right"
         autoClose={3000}
@@ -66,7 +66,7 @@ export default function about() {
         pauseOnHover
         theme="light"
       />
-      <div className="container md:my-14 md:px-6 my-24 px-[40px]">
+      <div className="container md:my-14 md:px-6 my-24 ">
         <section className="mb-32 text-gray-800 text-center">
           <div className="px-6 py-12 md:px-12">
             <div className="container mx-auto xl:px-32 md:w-auto w-[1300px]">

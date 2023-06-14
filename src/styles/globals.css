@@ -155,9 +155,9 @@
 
 .landing {
   background-image: url("/Rectangle.jpg");
-  background-repeat: no-repeat;
-  background-size: 1600px;
-  height: fit-content;
+  /* background-repeat: repeat-y; */
+  background-size: cover;
+  overflow-x: hidden;
   /* height: 796px; */
   margin-top: 0px !important;
 }
@@ -170,4 +170,11 @@
 
 .drop{
   background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+}
+.contactPage{
+  overflow: hidden;
+  height: 728px;
+}
+#pro{
+  height: 2200px;
 }
