@@ -9,7 +9,7 @@ export default function landing() {
         </h3>
         <div className="mt-5 font-poppins font-bold md:text-[75px] text-[120px] leading-[100px] md:mx-12 ">
           <p className="text-[#245D27] mx-[50px] w-[850px] md:mx-0">
-            Hi! I’m Gagan
+            Hi! I’m Gagan Chaudhary
           </p>
           {/* <p className="text-[#245D27]"> */}
           <div
