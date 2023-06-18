@@ -105,7 +105,7 @@ export default function Navbar() {
           </Link>
           <Link href={"/contact"}>
             <li className="nav-line nav-line-ani text-center text-7xl" onClick={openMenu}>
-              Contact me
+              Contact Me
             </li>
           </Link>
         </ul>
