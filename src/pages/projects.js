@@ -741,7 +741,7 @@ export default function about(props) {
                 Description 👇
               </p>
               <p className="font-poppins">
-              Introducing WeatherApp: Your personal weather app delivering real-time updates on temperature, humidity, air pressure, and more, for any city you desire. Stay informed, stay prepared, with WeatherWise at your fingertips.
+              Introducing WeatherApp: Your personal weather app delivering real-time updates on temperature, humidity, air pressure, and more, for any city you desire. Stay informed and stay prepared, with WeatherWise at your fingertips.
               </p>
             </div>
             <h2 className="md:mt-11 font-poppins mt-[100px] md:text-base text-4xl font-semibold">
