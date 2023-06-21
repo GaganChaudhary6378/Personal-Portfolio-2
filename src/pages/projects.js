@@ -716,6 +716,9 @@ export default function about(props) {
               <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
               </p>
+              <p className="font-poppins">
+                Created a game of cards that shuffles the card till both the cards have same faces.
+              </p>
             </div>
             <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px] font-semibold">
               Stack Used:
