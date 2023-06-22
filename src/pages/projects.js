@@ -714,7 +714,7 @@ export default function about(props) {
                 Game of war
               </p>
               <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
-                Description 👇
+                Description👇
               </p>
               <p className="font-poppins">
                 Created a game of cards that shuffles the card till both the cards have same faces.
