@@ -80,7 +80,7 @@ export default function about(props) {
     // opacity-${clicked ? 0 : 0}`}
     show && (
       
-      <div className={`h-[1100px] opacity-${clicked ? 10 : 100}`}>
+      <div className={`h-[1120px] opacity-${clicked ? 10 : 100}`}>
         {/* <motion.div
         className="card1 bg-red-400"
         onClick={() => setisOpen(!isOpen)}
@@ -679,7 +679,7 @@ export default function about(props) {
         </div>
 
         <div className="flex md:flex-row flex-col w-[1400px] md:w-[1500px]">
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[700px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[500px] w-[1328px] md:h-[330px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700 ">
                 Chrome Dashboard
@@ -708,7 +708,7 @@ export default function about(props) {
 
           {/* Second card */}
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[500px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[470px] w-[1328px] md:h-[330px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 Game of war
@@ -726,7 +726,7 @@ export default function about(props) {
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="md:ml-[77%] ml-[85%] md:mt-3 mt-6 font-bold font-poppins md:text-base text-3xl">
+            <button className="md:ml-[70%] ml-[85%] md:mt-3 mt-6 font-bold font-poppins md:text-base text-3xl">
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -735,7 +735,7 @@ export default function about(props) {
             </button>
           </section>
 
-          <section className="bx1 ml-[45px] mt-[50px] md:w-[550px] w-[1328px] md:h-[240px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
+          <section className="bx1 ml-[45px] mt-[50px] md:w-[380px] w-[1328px] md:h-[330px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 WeatherApp
@@ -744,7 +744,7 @@ export default function about(props) {
                 Description 👇
               </p>
               <p className="font-poppins">
-              Introducing WeatherApp: Your personal weather app delivering real-time updates on temperature, humidity, air pressure, and more, for any city you desire. Stay informed and stay prepared, with WeatherWise at your fingertips.
+              Introducing WeatherApp: Your personal weather app delivering real-time updates on temperature, humidity, air pressure, and more, for any city you desire.
               </p>
             </div>
             <h2 className="md:mt-11 font-poppins mt-[100px] md:text-base text-4xl font-semibold">
@@ -753,7 +753,7 @@ export default function about(props) {
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="md:ml-[80%] ml-[85%] md:mt-2 mt-6 font-bold font-poppins md:text-base text-3xl">
+            <button className="md:ml-[70%] ml-[85%] md:mt-0 mt-6 font-bold font-poppins md:text-base text-3xl">
               <span className="flex flex-row">
                 {" "}
                 See Details
