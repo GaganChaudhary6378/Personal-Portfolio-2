@@ -697,7 +697,7 @@ export default function about(props) {
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="md:ml-[60%] ml-[85%] mt-9 font-bold font-poppins md:text-base text-3xl">
+            <button className="md:ml-[75%] ml-[85%] md:mt-6 mt-9 font-bold font-poppins md:text-base text-3xl">
               <span className="flex flex-row">
                 {" "}
                 See Details
@@ -726,7 +726,7 @@ export default function about(props) {
             <div className="md:mt-3 mt-[40px] flex flex-row md:text-4xl text-7xl">
               <TbBrandNextjs />
             </div>
-            <button className="md:ml-[70%] ml-[85%] md:mt-3 mt-6 font-bold font-poppins md:text-base text-3xl">
+            <button className="md:ml-[74%] ml-[85%] md:mt-12 mt-6 font-bold font-poppins md:text-base text-3xl">
               <span className="flex flex-row">
                 {" "}
                 See Details
