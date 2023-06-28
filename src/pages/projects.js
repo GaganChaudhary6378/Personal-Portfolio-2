@@ -688,7 +688,7 @@ export default function about(props) {
                 Description 👇
               </p>
               <p className="font-poppins">
-              Introducing the Chrome Dashboard: a user-friendly tool to track cryptocurrency values and personalize your browsing experience. Stay up to date with real-time prices, all in one place.
+              Introducing the Chrome Dashboard: A user-friendly tool to track cryptocurrency values and personalize your browsing experience. Stay up to date with real-time prices, all in one place.
               </p>
             </div>
             <h2 className="md:mt-5 font-poppins md:text-base text-4xl mt-[100px] font-semibold">
