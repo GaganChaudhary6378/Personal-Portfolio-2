@@ -717,7 +717,7 @@ export default function about(props) {
                 Description👇
               </p>
               <p className="font-poppins">
-                Developed a game of cards that shuffles the card till both the cards have similar kind of the faces.
+                Developed a Game of cards that shuffles the card till both the cards have similar kind of the faces.
               </p>
             </div>
             <h2 className="md:mt-11 font-poppins md:text-base text-4xl mt-[100px] font-semibold">
