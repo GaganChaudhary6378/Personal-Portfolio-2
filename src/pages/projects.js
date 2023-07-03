@@ -730,7 +730,7 @@ export default function about(props) {
               <span className="flex flex-row">
                 {" "}
                 See Details
-                <FiChevronsDown className="mt-1 animate-bounce" />
+                <FiChevronsDown className="mt-1 animate-bounce"/>
               </span>
             </button>
           </section>
