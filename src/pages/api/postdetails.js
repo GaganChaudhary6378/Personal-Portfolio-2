@@ -25,7 +25,7 @@ const handler = async (req, res) => {
     to: email,
     subject: `Message From Gagan Chaudhary Portfolio Site`,
     text: "Sent from: " + "gss12111408@gmail.com",
-    html: `<div>Thanks Mr./Mrs. ${name} for contacting Mr. Gagan chaudhary ,will respond to your query i.e ( ${message} ) in 1-2 business days.</div><h3>Have a good day.</h3><p>Sent from: gss12111408@gmail.com</p>`,
+    html: `<div>Thanks Mr./Mrs. ${name} for contacting Gagan Chaudhary ,will respond to your query i.e ( ${message} ) in 1-2 business days.</div><h3>Have a good day.</h3><p>Sent from: gss12111408@gmail.com</p>`,
   };
   transporter.sendMail(mailData, function (err, info) {
     if (err) 
