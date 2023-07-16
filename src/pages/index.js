@@ -42,7 +42,7 @@ export default function landing() {
           </a>
           <a href="/projects">
             <button className="glow-on-hover md:ml-4 font-revalia font-normal md:text-[17px] bg-[#F5F5F5] md:w-[217px] md:h-[42px] mx-[247px] mt-[100px] w-[400px] h-[100px] md:mt-0 text-[30px] text-center">
-              See my Projects
+              See all Projects
             </button>
           </a>
         </div>
