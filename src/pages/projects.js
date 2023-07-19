@@ -107,7 +107,7 @@ export default function about(props) {
         )} */}
         {/* </motion.div> */}
         <div className="flex md:flex-row flex-col flex-wrap">
-          <div className="bx1 ml-[45px] mt-[50px] md:w-[800px] w-[1328px] md:h-[280px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
+          <div className="bx1 ml-[46px] mt-[50px] md:w-[800px] w-[1328px] md:h-[280px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
                 E-commerce Website
