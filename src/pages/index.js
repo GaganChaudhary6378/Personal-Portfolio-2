@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 export default function landing() {
   return (
     <div>
-      <div className="md:mt-[160px] mt-[1000px] md:ml-0 ml-[240px]">
+      <div className="md:mt-[130px] mt-[1000px] md:ml-0 ml-[240px] md:h-[37rem]">
         <h3 className="font-bold font-poppins md:mx-12 mx-[250px] w-[600px] md:text-sm text-2xl">
           Welcome to my portfolio.
         </h3>
