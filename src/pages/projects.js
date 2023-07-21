@@ -80,7 +80,7 @@ export default function about(props) {
     // opacity-${clicked ? 0 : 0}`}
     show && (
       
-      <div className={`h-[1120px] opacity-${clicked ? 10 : 100}`}>
+      <div className={`h-[1121px] opacity-${clicked ? 10 : 100}`}>
         {/* <motion.div
         className="card1 bg-red-400"
         onClick={() => setisOpen(!isOpen)}
