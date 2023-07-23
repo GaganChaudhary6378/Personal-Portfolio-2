@@ -80,7 +80,7 @@ export default function about(props) {
     // opacity-${clicked ? 0 : 0}`}
     show && (
       
-      <div className={`h-[1121px] opacity-${clicked ? 10 : 100}`}>
+      <div className={`h-[1120px] opacity-${clicked ? 10 : 100}`}>
         {/* <motion.div
         className="card1 bg-red-400"
         onClick={() => setisOpen(!isOpen)}
@@ -229,7 +229,7 @@ export default function about(props) {
           <section className="bx1 ml-[45px] mt-[50px] md:w-[600px] w-[1328px]  md:h-[280px] h-[550px] px-3 rounded-md shadow-neutral-500 shadow-lg  hover:shadow-gray-500 hover:shadow-2xl">
             <div>
               <p className="font-revalia flex flex-row justify-center md:text-xl text-4xl md:mt-0 mt-4 text-green-700">
-                Quizze
+                Quizzee
               </p>
               <p className="font-poppins md:leading-[60px] leading-[150px] md:text-base text-4xl font-semibold">
                 Description 👇
